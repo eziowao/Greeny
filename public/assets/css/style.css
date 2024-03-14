@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .desktop-f {
   display: none;
 }
@@ -38,6 +39,8 @@
   margin: 0.5em;
 }
 .mobile-f ul li a {
+  font-family: "Montserrat";
+  font-weight: bold;
   color: white;
   text-decoration: none;
 }
@@ -91,33 +94,110 @@
 }
 @keyframes hideNav {}
 
-@media (width > 750px) {
+@media (width > 700px) {
   body {
     margin: 1em;
   }
   .mobile-f {
     display: none;
   }
+  header {
+    display: flex;
+    align-content: center;
+    height: 20vh;
+  }
   .desktop-f {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-content: center;
-    align-items: center;
     width: 100%;
+    height: 100%;
+    margin: 0 1em;
   }
-  .desktop-f ul {
-    display: inline;
+  .desktop-f img {
+    max-width: 120px;
+    height: 120px;
+    margin: 2em;
+  }
+  .desktop-f div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: end;
+    width: 80%;
+  }
+  .desktop-f div ul {
+    font-size: large;
+    width: 100%;
+    display: inline-block;
     background-color: inherit;
-    margin: 0;
+    margin: 1.5em 0;
     padding: 0;
+    text-align: end;
   }
-  .desktop-f ul li {
+  .desktop-f div ul li {
     display: inline;
-    margin: 0.5em;
+    margin: 1.5em;
   }
-  .desktop-f ul li a {
+  .desktop-f div ul li a {
     color: #484b25;
     text-decoration: none;
+  }
+  .desktop-f div div {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 3em;
+    margin: 1.5em;
+  }
+  .desktop-f div div input {
+    padding-left: 5em;
+    overflow: hidden;
+    outline: none;
+  }
+  .desktop-f div div i {
+    position: absolute;
+    font-size: large;
+    color: #484b25;
+    background-color: #d4863c;
+    font-size: x-large;
+    border-radius: 5px;
+    padding: 0.9em;
+  }
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 600px;
+    margin-top: 2em;
+  }
+  .hero-container p {
+    width: 40%;
+    margin: 5em 0;
+  }
+  .hero-container img {
+    width: 60%;
+    max-height: 500px;
+  }
+}
+@media (width < 1050px) {
+  .desktop-f {
+    flex-wrap: nowrap;
+  }
+  .desktop-f img {
+    margin: 0.5em;
+  }
+  .desktop-f div {
+    flex-wrap: wrap;
+  }
+  .desktop-f div ul li {
+    margin: 0.5em;
+  }
+  .desktop-f div div {
+    width: 60%;
   }
 }
 
