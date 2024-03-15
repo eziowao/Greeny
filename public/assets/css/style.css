@@ -64,6 +64,9 @@
   font-size: xx-large;
   z-index: 9999;
 }
+.mobile-f .hero-container {
+  margin-top: 2em;
+}
 @keyframes moveXmark {
   0% {
     color: rgba(255, 255, 255, 0);
@@ -112,12 +115,12 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    margin: 0 1em;
+    margin: 1.5em 1em;
   }
   .desktop-f img {
     max-width: 120px;
     height: 120px;
-    margin: 2em;
+    margin: 2em 1.8 0 2em;
   }
   .desktop-f div {
     display: flex;
@@ -125,13 +128,14 @@
     align-content: space-between;
     justify-content: end;
     width: 80%;
+    margin-right: 5em;
   }
   .desktop-f div ul {
     font-size: large;
     width: 100%;
     display: inline-block;
     background-color: inherit;
-    margin: 1.5em 0;
+    margin: 0;
     padding: 0;
     text-align: end;
   }
@@ -142,6 +146,7 @@
   .desktop-f div ul li a {
     color: #484b25;
     text-decoration: none;
+    font-weight: bold;
   }
   .desktop-f div div {
     width: 50%;
@@ -150,10 +155,10 @@
     align-items: center;
     justify-content: start;
     margin-bottom: 3em;
-    margin: 1.5em;
+    margin-left: 5em;
   }
   .desktop-f div div input {
-    padding-left: 5em;
+    padding-left: 2em;
     overflow: hidden;
     outline: none;
   }
@@ -161,22 +166,22 @@
     position: absolute;
     font-size: large;
     color: #484b25;
-    background-color: #d4863c;
-    font-size: x-large;
     border-radius: 5px;
-    padding: 0.9em;
+    padding-left: 0.5em;
   }
   .hero-container {
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    height: 600px;
-    margin-top: 2em;
+    height: auto;
+    margin-top: 4.5em;
+    width: 110%;
+    font-family: "Montserrat";
   }
   .hero-container p {
     width: 40%;
-    margin: 5em 0;
+    margin: 5em 2.5em;
   }
   .hero-container img {
     width: 60%;
@@ -186,6 +191,7 @@
 @media (width < 1050px) {
   .desktop-f {
     flex-wrap: nowrap;
+    align-content: center;
   }
   .desktop-f img {
     margin: 0.5em;
@@ -198,6 +204,7 @@
   }
   .desktop-f div div {
     width: 60%;
+    margin-right: 0;
   }
 }
 
