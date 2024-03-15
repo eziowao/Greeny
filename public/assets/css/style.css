@@ -1,18 +1,288 @@
-.bg-orange {
-    background-color: #D4863C;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.desktop-f {
+    display: none;
 }
 
-.logo {
-    width: 105px;
-    height: 102px;
+/* Navbar de Fred */
+.mobile-f {
     display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-top: 1.2em;
 }
+
+.mobile-f i {
+    color: #484b25;
+    font-size: x-large;
+    margin: 0.8em;
+    z-index: 999;
+}
+
+.mobile-f i:hover {
+    cursor: pointer;
+}
+
+.mobile-f ul {
+    position: absolute;
+    text-align: center;
+    height: 55vh;
+    padding: 0;
+    top: 0%;
+    background-color: #d4863c;
+    width: 90%;
+    max-width: 400px;
+    min-width: 250px;
+    border-radius: 0 30% 40% 30%;
+    z-index: 999;
+}
+
+.mobile-f ul li {
+    list-style: none;
+    width: 100%;
+    font-size: large;
+    margin: 0.5em;
+}
+
+.mobile-f ul li a {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.mobile-f .hide {
+    display: none;
+    animation: hideNav 2s;
+}
+
+.mobile-f .show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    animation: burgerToX 1s;
+}
+
+.mobile-f .active::before {
+    content: "";
+}
+
+.mobile-f .fa-xmark {
+    animation: moveXmark 3s;
+    color: white;
+    font-size: xx-large;
+    z-index: 9999;
+}
+
+.mobile-f .hero-container {
+    margin-top: 2em;
+}
+
+@keyframes moveXmark {
+    0% {
+        color: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        color: white !important;
+    }
+}
+
+@keyframes burgerToX {
+    0% {
+        top: -20%;
+        left: -20%;
+    }
+
+    100% {
+        top: 0%;
+        left: 0;
+    }
+}
+
+@keyframes xToBurger {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    100% {
+        top: -20%;
+        left: -20%;
+    }
+}
+
+@keyframes hideNav {}
+
+@media (width > 700px) {
+    .mobile-f {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-content: center;
+        height: 20vh;
+    }
+
+    .desktop-f {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        margin: 1.5em 1em;
+    }
+
+    .desktop-f img {
+        max-width: 120px;
+        height: 120px;
+        margin: 2em 1.8 0 2em;
+    }
+
+    .desktop-f div {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: end;
+        width: 80%;
+        margin-right: 5em;
+    }
+
+    .desktop-f div ul {
+        font-size: large;
+        width: 100%;
+        display: inline-block;
+        background-color: inherit;
+        margin: 0;
+        padding: 0;
+        text-align: end;
+    }
+
+    .desktop-f div ul li {
+        display: inline;
+        margin: 1.5em;
+    }
+
+    .desktop-f div ul li a {
+        color: #484b25;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .desktop-f div div {
+        width: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 3em;
+        margin-left: 5em;
+    }
+
+    .desktop-f div div input {
+        padding-left: 2em;
+        overflow: hidden;
+        outline: none;
+    }
+
+    .desktop-f div div i {
+        position: absolute;
+        font-size: large;
+        color: #484b25;
+        border-radius: 5px;
+        padding-left: 0.5em;
+    }
+}
+
+@media (width < 1050px) {
+    .desktop-f {
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    .desktop-f img {
+        margin: 0.5em;
+    }
+
+    .desktop-f div {
+        flex-wrap: wrap;
+    }
+
+    .desktop-f div ul li {
+        margin: 0.5em;
+    }
+
+    .desktop-f div div {
+        width: 60%;
+        margin-right: 0;
+    }
+}
+
+header nav img {
+    height: 15vh;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
+/* Main & Footer */
 
 .carotte {
-    width: 512px;
-    height: 380px;
+    margin-left: 5vw;
 }
 
 .category-bg {
     background-color: #93A25A;
+}
+
+.hero {
+    font-family: "Lato", sans-serif;
+    color: #596A40;
+}
+
+#category {
+    font-family:"Montserrat";
+    background-color: #484b25;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+main div p {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
+.card-body {
+    transition: 0.3s;
+    background-color: rgba(233, 233, 233, 0.685);
+}
+
+.card-body:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    color: #FFFFFF;
+}
+
+.p-6 {
+    padding: 6rem !important;
+}
+
+.mt-6 {
+    margin-top: 6rem !important;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-bg {
+    background-color: #D4863C;
 }

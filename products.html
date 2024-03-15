@@ -11,73 +11,136 @@
 
 <body>
     <header>
-    
+
+        <!-- MOBILE -->
+        <nav class="mobile-f">
+            <i class="fa-solid fa-bars burger-icon" onclick="navbarEffect.transformBurgerIcon()"></i>
+            <a href="#"><img src="public/assets/img/brand-icon.png" alt="Logo"></a>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <ul class="nav-items hide">
+                <li><a class="active" href="">Accueil</a></li>
+                <li><a href="">Evenement</a></li>
+                <li><a href="">Echange</a></li>
+                <li><a href="">A propos</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <!-- UP TO MOBILE LANDSCAPE -->
+        <nav class="desktop-f">
+            <a href="#"><img src="public/assets/img/brand-icon.png" alt="Logo"></a>
+            <div>
+                <ul class="nav-items-desktop">
+                    <li><a class="active" href="">Accueil</a></li>
+                    <li><a href="">Evenement</a></li>
+                    <li><a href="">Echange</a></li>
+                    <li><a href="">A propos</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+                <div>
+                    <input class="input-group rounded" type="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </nav>
+
     </header>
     <!-- rajouter la nav bar de sandro-->
+
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 mt-5">
-                    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nostrum itaque molestias
-                        ipsum exercitationem laborum nulla eligendi consequuntur fuga quos omnis recusandae quaerat
-                        possimus maiores, animi rerum, accusamus ad velit veniam sequi amet tempore? Saepe quam amet
-                        mollitia error obcaecati et nisi, dolor quidem quisquam harum, quis veritatis placeat molestiae!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iusto repudiandae aliquid, error
-                        quidem maxime ipsum, voluptas beatae laudantium veritatis officiis adipisci, odit asperiores
-                        minima debitis libero voluptates earum reiciendis omnis maiores! Dolores vero, ipsam
-                        consectetur, quibusdam, impedit quasi debitis dicta odit animi reiciendis beatae deserunt
-                        dolorum? Deleniti, odit ratione sunt quis hic porro unde modi. Ut perferendis, dolorum
-                        exercitationem totam eum maxime, blanditiis molestiae impedit consequuntur nam officia optio.
-                    </article>
+
+        <!-- hero -->
+        <div class="container hero d-flex align-items-center mb-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 p-6">
+                    <article> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat veritatis voluptatum
+                        cumque culpa, tenetur soluta, nihil doloremque repudiandae tempore minima voluptates vel
+                        accusantium non ullam quia magnam assumenda deserunt ad cupiditate. Sint cupiditate officiis,
+                        pariatur laudantium suscipit voluptatum rem commodi delectus repudiandae. Eligendi vitae
+                        consectetur optio laboriosam quo velit corporis, rerum sunt eveniet odio quibusdam in
+                        accusantium. Cum similique obcaecati placeat nostrum harum corporis ea voluptate, eaque ad
+                        ducimus reprehenderit nihil rem quis culpa, alias autem optio, quod minus amet.</article>
                 </div>
-                <div class="col-12 col-lg-6 text-center">
-                    <img src="./public/assets/img/carotte.jpg" alt="sac de carottes" class="carotte">
+                <div class="col-12 col-lg-6">
+                    <img src="./public/assets/img/Legumes.jpg" alt="sac de carrotte" class="d-flex img-fluid">
                 </div>
             </div>
         </div>
-        <div class="container-fluid text-center category-bg img-fluid">
+
+        <!-- category -->
+        <div class="container-fluid category-bg text-center d-flex align-items-center img-fluid p-6">
             <div class="row">
-                <div class="col-12 col-lg-3">
-                    <div class="card ">
-                        <img src="./public/assets/img/graines.jpg" class="card-img-top h-50 " alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Graines</p>
-                        </div>
-                      </div>
+                <div class="container pb-4 d-flex justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-12 fw-bold mx-5"><p id="category">Catégories</p></div>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-3">
-                    <div class="card ">
-                        <img src="./public/assets/img/graines.jpg" class="card-img-top h-50 " alt="...">
+                <div class="col-12 col-lg-3 my-3">
+                    <div class="card">
+                        <img src="./public/assets/img/graines.jpg" class="card-img-top" alt="Graines">
                         <div class="card-body">
-                          <p class="card-text">Plantes</p>
+                            <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 link-dark"><p class="card-text">Graines</p></a>
                         </div>
-                      </div>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-3">
-                    <div class="card ">
-                        <img src="./public/assets/img/graines.jpg" class="card-img-top h-50 " alt="...">
+                <div class="col-12 col-lg-3 my-3">
+                    <div class="card">
+                        <img src="./public/assets/img/Plantes.jpg" class="card-img-top" alt="Plantes">
                         <div class="card-body">
-                          <p class="card-text">Arbres</p>
+                            <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 link-dark"><p class="card-text">Plantes</p></a>
                         </div>
-                      </div>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-3">
-                    <div class="card ">
-                        <img src="./public/assets/img/graines.jpg" class="card-img-top h-50 " alt="...">
+                <div class="col-12 col-lg-3 my-3">
+                    <div class="card">
+                        <img src="./public/assets/img/Arbres.jpg" class="card-img-top" alt="Arbres">
                         <div class="card-body">
-                          <p class="card-text">Arbustes</p>
+                            <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 link-dark"><p class="card-text">Arbres</p></a>
                         </div>
-                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 my-3">
+                    <div class="card">
+                        <img src="./public/assets/img/Arbustes.jpg" class="card-img-top" alt="Arbustes">
+                        <div class="card-body">
+                            <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 link-dark"><p class="card-text">Arbustes</p></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
-
+    <!-- Footer -->
     <footer>
-
+        <div class="container-fluid footer-bg mt-6 order-1">
+            <div class="row mx-2 justify-content-around">
+                <div class="col-12 col-lg-4 text-center text-md-start p-4">
+                    <p>LaManuÉcologie</p>
+                    <p>238 Earls Ct Rd, Londres SW5 9AA</p>
+                    <p>+44 20 7123 4567</p>
+                    <p>contact@lamanuecology.com</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center order-3 order-lg-2 d-flex flex-wrap align-content-around justify-content-evenly">
+                    <a href="#"><img src="./public/assets/img/instagram.png" alt="Lien vers Instagram"></a>
+                    <a href="#"><img src="./public/assets/img/twitter.png" alt="Lien vers X"></a>
+                    <a href="#"><img src="./public/assets/img/facebook.png" alt="Lien vers Facebook"></a>
+                </div>
+                <div class="col-12 col-lg-4 text-center text-md-end text-end p-4 order-2 order-lg-3">
+                    <p>À propos</p>
+                    <p>FAQ & Contact</p>
+                    <p>Mentions Légales</p>
+                    <p>CGU</p>
+                </div>
+                <div class="col-12 text-center p-4 order-4">
+                    <p>Copyright Greeny 2024</p>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="./lib/bootstrap.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/afc6a54030.js" crossorigin="anonymous"></script>
+    <script src="./public/assets/js/index.js"></script>
 </body>
 
 </html>
