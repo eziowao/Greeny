@@ -1,0 +1,52 @@
+:root {
+    font-size: 18px;
+}
+
+.text_darkgreen {
+    color: #596A40;
+}
+
+.bg_lightgreen {
+    background-color: #93A25A;
+}
+
+.bg_dark .navbar-nav .nav-item .nav-link {
+    font-size: 1em;
+    color: #596A40;
+    font-weight: bold;
+}
+
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #D4863C;
+}
+
+.form-control {
+    border-radius: 24px;
+}
+
+.form-control:hover {
+    box-shadow: 0px 0px 10px -2px;
+}
+
+/* -------------------- content-------------------- */
+
+.container h2 {
+    margin-top: 5%;
+    color: #596A40;
+    font-size: 2em;
+}
+
+.container h5,
+.container p {
+    color: #596A40;
+    font-size: 1em;
+}
+
+.questions_box {
+    padding: 3%;
+}
+
+.group_img {
+    width: 100%;
+}
