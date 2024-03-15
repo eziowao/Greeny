@@ -231,12 +231,17 @@ header nav img {
 
 /* Main & Footer */
 
+:root {
+    font-size: 18px;
+}
+
 .carotte {
     margin-left: 5vw;
 }
 
 .category-bg {
     background-color: #93A25A;
+    font-family: "Montserrat";
 }
 
 .hero {
@@ -248,7 +253,6 @@ header nav img {
     font-family:"Montserrat";
     background-color: #484b25;
     color: #FFFFFF;
-    font-size: 1.5rem;
 }
 
 main div p {
@@ -266,7 +270,6 @@ main div p {
 }
 
 footer {
-    font-size: 1.5rem;
     font-family: "Lato", sans-serif;
     color: #FFFFFF;
 }
