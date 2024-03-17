@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon profil - Greeny</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/public/assets/img/Greeny.png" alt="Logo Greeny" height="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center ml-auto justify-content-center justify-content-lg-end ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text_darkgreen" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text_darkgreen" href="#">Événements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text_darkgreen" href="#">Échanges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text_darkgreen" href="#">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text_darkgreen" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text_darkgreen" href="#">{user-name}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+
+            <form class="row gx-3 align-items-center justify-content-center">
+                <div class="col-10 col-lg-5">
+                    <input class="form-control rounded-24" type="search" placeholder="Rechercher"
+                        aria-label="Rechercher">
+                </div>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row my-5 align-items-center">
+                <div class="container col-lg-5 text-center text-lg-start">
+                    <h1 class="fs22 fw-bold text_darkgreen"> Bonjour, {user-name}</h1>
+                    <img src="./public/assets/img/stars.png" height="20" alt="Icon note utilisateur">
+                    <p class="text_darkgreen">“ Passionnée de jardinage depuis toujours, je m'appelle [Votre Nom] et je
+                        suis ravie de partager
+                        ma passion avec vous. Sur ce site, je propose une sélection soigneusement choisie de graines de
+                        fruits et légumes, pour vous aider à créer votre propre petit coin de paradis vert. Faites
+                        pousser de délicieuses récoltes tout en ajoutant une touche de beauté à votre jardin grâce à nos
+                        variétés sélectionnées avec amour. “</p>
+                </div>
+                <div class="col-12 col-lg-5 d-flex justify-content-center">
+                    <img src="./public/assets/img/icon_user_profil.png" height="300" alt="">
+                </div>
+
+                <div class="row">
+                    <button type="button"
+                        class="btn btn-primary col-6 col-lg-2 mx-auto my-5 bg_lightgreen border-0 no-hover shadow rounded-24 prevent-hover"
+                        data-bs-toggle="modal" data-bs-target="#ajouterArticleModal">
+                        Ajouter un article
+                    </button>
+
+
+                    <div class="modal fade" id="ajouterArticleModal" tabindex="-1"
+                        aria-labelledby="ajouterArticleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header d-flex justify-content-center align-items-center">
+                                    <h5 class="modal-title text_darkgreen col-11 d-flex justify-content-center"
+                                        id="ajouterArticleModalLabel">
+                                        Ajouter un
+                                        article</h5>
+                                    <button type="button" class="btn-close col-1" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="articleForm text">
+                                        <div class="mb-3">
+                                            <label for="nomArticle" class="form-label text_darkgreen"></label>
+                                            <input type="text" class="form-control rounded-18" id="nomArticle"
+                                                placeholder="Nom de votre article" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="descriptionArticle" class="form-label text_darkgreen"></label>
+                                            <textarea class="form-control rounded-18" id="descriptionArticle" rows="3"
+                                                placeholder="Description de votre article" required></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="photoArticle" class="form-label text_darkgreen"></label>
+                                            <input type="file" class="form-control rounded-18" id="photoArticle"
+                                                accept="image/*" multiple onchange="handleFileSelect(event)" required>
+                                        </div>
+                                        <div id="preview"></div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer text-center">
+                                    <button type="submit"
+                                        class="btn col-5 col-lg-4 bg_lightgreen text-light border-0 no-hover shadow rounded-24 mx-auto prevent-hover">Enregistrer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <h2 class="col-10 fs22 fw-bold text_darkgreen text-center text-lg-start">Vos articles : </h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center my-5">
+                <div class="col-lg-5 col-md-5">
+                    <img src="./public/assets/img/mirabelle.png" class="col-12" alt="Prunier mirabelle">
+                </div>
+                <div class="col-lg-5 col-md-5">
+                    <h3 class="fs22 text_darkgreen text-center text-lg-start"> Prunier Mirabelle de Nancy - <span
+                            class="fst-italic">Amiens</span>
+                    </h3>
+                    <p class="text_darkgreen text-center text-lg-start">Je propose à la vente un superbe prunier de la
+                        variété Mirabelle de Nancy,
+                        réputée pour la qualité exceptionnelle de ses fruits. Ce prunier est un véritable joyau pour
+                        tout jardin,
+                        offrant à la fois beauté et abondance.</p>
+                    <!-- Ajout des boutons Modifier et Supprimer -->
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn bg_lightgreen text-light prevent-hover mx-3">Modifier</button>
+                        <button type="button" class="btn bg_orange text-light prevent-hover mx-3">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center my-5">
+                <div class="col-lg-5 col-md-5">
+                    <img src="./public/assets/img/fraisier.png" class="col-12 col-xs-5" alt="Prunier mirabelle">
+                </div>
+                <div class="col-lg-5 col-md-5">
+                    <h3 class="fs22 text_darkgreen text-center text-lg-start"> Fraisier - <span
+                            class="fst-italic">Amiens</span> </h3>
+                    <p class="text_darkgreen text-center text-lg-start">Je vous propose un fraisier exceptionnel à
+                        adopter pour embellir votre
+                        jardin et savourer des fraises fraîches à volonté. Ce fraisier est une véritable trouvaille pour
+                        les passionnés de culture fruitière, offrant des récoltes abondantes et délicieusement sucrées.
+                    </p>
+                    <!-- Ajout des boutons Modifier et Supprimer -->
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn bg_lightgreen text-light prevent-hover mx-3">Modifier</button>
+                        <button type="button" class="btn bg_orange text-light prevent-hover mx-3">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid bg_orange mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <p class="text-light mt-3 mb-0 text-center text-lg-start">LaManuÉcologie</p>
+                        <p class="text-light mb-0 text-center text-lg-start">238 Earls Ct Rd, Londres SW5 9AA</p>
+                        <p class="text-light mb-0 text-center text-lg-start">+44 20 7123 4567</p>
+                        <p class="text-light text-center text-lg-start">contact@lamanuecology.com</p>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <img src="./public/assets/img/icon_ig.png" height="30" class="m-2" alt="Logo Instagram">
+                        <img src="./public/assets/img/icon_twitter.png" height="30" class="m-2" alt="Logo Twitter / X">
+                        <img src="./public/assets/img/icon_fb.png" height="30" class="m-2" alt="Logo Facebook">
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <p class="mt-3 mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">À propos</a></p>
+                        <p class="mb-0 text-center text-lg-end"> <a class="text-decoration-none
+                            text-light" href="">F.A.Q & Contact</a></p>
+                        <p class="mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">Mentions Légales</a></p>
+                        <p class="mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">CGU</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="col-12 text-center text-light">Copyright Greeny 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+<script>
+    var myModal = new bootstrap.Modal(document.getElementById('ajouterArticleModal'));
+
+    // Fonction pour gérer la sélection de fichiers
+    function handleFileSelect(event) {
+        const files = event.target.files;
+        const preview = document.getElementById('preview');
+
+        // Afficher un message d'erreur si plus de 3 fichiers sont sélectionnés
+        if (files.length > 3) {
+            alert('Vous ne pouvez pas ajouter plus de 3 photos.');
+            event.target.value = ''; // Réinitialiser la valeur de l'input file
+            return false;
+        }
+
+        preview.innerHTML = ''; // Effacer le contenu précédent
+
+        // Afficher les miniatures des fichiers sélectionnés
+        for (const file of files) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const img = document.createElement('img');
+                img.src = e.target.result;
+                img.style.maxWidth = '100px'; // Limiter la taille de l'image
+                preview.appendChild(img);
+            };
+            reader.readAsDataURL(file);
+        }
+    }
+
+    // Vérifier si au moins une photo est ajoutée avant de soumettre le formulaire
+    document.getElementById('articleForm').addEventListener('submit', function (event) {
+        const files = document.getElementById('photoArticle').files;
+        if (files.length < 1) {
+            alert('Vous devez ajouter au moins une photo.');
+            event.preventDefault(); // Empêcher la soumission du formulaire
+        }
+    });
+</script>
+
+</html>

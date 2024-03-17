@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    font-size: 18px;
+}
+
+.fs22 {
+    font-size: 22px;
+}
+
+.text_darkgreen {
+    color: #596A40;
+}
+
+.bg_lightgreen {
+    background-color: #93A25A;
+}
+
+.bg_orange {
+    background-color: #D4863C;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #D4863C;
+}
+
+.form-control:hover {
+    box-shadow: 0px 0px 10px -2px;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* -------------------- content-------------------- */
+
+.contact_form {
+    border-radius: 0px 0px 30px 0px;
+}
+
+.no-hover .form-control:hover {
+    box-shadow: none;
+}
+
+.prevent-hover.btn:hover,
+.prevent-hover.btn:focus,
+.prevent-hover.btn:active {
+    color: #fff;
+    background-color: #93A25A;
+}
+
+.no-hover:hover {
+    background-color: #93A25A;
+}
+
+.rounded-24 {
+    border-radius: 24px;
+}
+
+.rounded-18 {
+    border-radius: 18px;
+}
