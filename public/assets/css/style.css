@@ -10,10 +10,12 @@
     background-color: #93A25A;
 }
 
+.bg_orange {
+    background-color: #D4863C;
+}
+
 .bg_dark .navbar-nav .nav-item .nav-link {
-    font-size: 1em;
     color: #596A40;
-    font-weight: bold;
 }
 
 
@@ -34,7 +36,6 @@
 .container h2 {
     margin-top: 5%;
     color: #596A40;
-    font-size: 2em;
 }
 
 .container h5,
@@ -44,9 +45,17 @@
 }
 
 .questions_box {
-    padding: 3%;
+    padding: 10%;
 }
 
-.group_img {
-    width: 100%;
+.contact_form {
+    border-radius: 0px 0px 30px 0px;
+}
+
+.no-hover .form-control:hover {
+    box-shadow: none;
+}
+
+.rounded-24 {
+    border-radius: 24px;
 }
