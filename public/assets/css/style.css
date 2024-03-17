@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
 :root {
     font-size: 18px;
 }
@@ -14,39 +30,20 @@
     background-color: #D4863C;
 }
 
-.bg_dark .navbar-nav .nav-item .nav-link {
-    color: #596A40;
-}
-
-
 .navbar-nav .nav-item .nav-link:hover {
     color: #D4863C;
-}
-
-.form-control {
-    border-radius: 24px;
 }
 
 .form-control:hover {
     box-shadow: 0px 0px 10px -2px;
 }
 
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 /* -------------------- content-------------------- */
-
-.container h2 {
-    margin-top: 5%;
-    color: #596A40;
-}
-
-.container h5,
-.container p {
-    color: #596A40;
-    font-size: 1em;
-}
-
-.questions_box {
-    padding: 10%;
-}
 
 .contact_form {
     border-radius: 0px 0px 30px 0px;
