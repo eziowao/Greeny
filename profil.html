@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeny</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/assets/css/style.css">
+</head>
+
+<body class="m-md-3 m-0">
+    <header class="my-5">
+          <!-- MOBILE -->
+        <nav class="d-md-none d-flex justify-content-between align-content-center align-items-center w-100 px-3">
+            <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
+            <i class="fa-solid fa-xmark cross-icon text-light hide" onclick="navbarEffect.run()"></i>
+            <img src="public/assets/img/brandIcon.png" alt="">
+            <i class="fa-solid fs-2 fa-magnifying-glass"></i>
+            <ul class="position-absolute ff-primary fs-4 menu hide-menu">
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Évènements</a></li>
+                <li><a href="">Échanges</a></li>
+                <li><a href="">À propos</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <!-- UP TO MOBILE LANDSCAPE -->
+        <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
+            <img src="public/assets/img/brandIcon.png" alt="">
+            <div class="w-75 d-flex flex-wrap justify-content-end align-content-between me-4">
+                <ul class="w-100 text-end ff-primary">
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">Accueil</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">Évènements</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">Échanges</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">À propos</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">FAQ</a></li>
+                </ul>
+                <div class="w-75">
+                    <input class="input-group rounded" type="search">
+                    <i class="fa-solid position-absolute fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-fluid container-profil my-5">
+        <div class="row d-none d-md-flex align-items-center justify-content-center p-4">
+            <div class="col-md-7 d-md-flex flex-wrap align-items-between py-4">
+                <div class="w-100 d-md-flex flex-wrap align-items-center justify-content-between">
+                    <p class="m-0 p-0 ff-primary fc-third fw-bold col-12">Alice - 37 ans - NYC</p>
+                    <div class="d-md-flex col-12 my-4">
+                        <i class="fa-solid fa-star p-1"></i>
+                        <i class="fa-solid fa-star p-1"></i>
+                        <i class="fa-solid fa-star p-1"></i>
+                        <i class="fa-solid fa-star p-1"></i>
+                        <i class="fa-solid fa-star p-1"></i>
+                    </div>
+                </div>
+                <p class="text-left w-75 fc-third">
+                    “ Passionnée de jardinage depuis toujours, je m'appelle [Votre Nom] et je suis ravie de partager ma passion 
+                    avec vous. Sur ce site, je propose une sélection soigneusement choisie de graines de fruits et légumes, pour vous aider à créer votre propre petit coin de paradis vert. Faites pousser de délicieuses récoltes tout en 
+                    ajoutant une touche de beauté à votre jardin grâce à nos variétés sélectionnées avec amour. “
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="public/assets/img/profil1.png" alt="">
+            </div>
+            <div class="d-flex my-5">
+                <button class="btn btn-third mx-auto">Contactez Alice</button>
+            </div>
+        </div>
+
+        <!-- MOBILE -->
+        <div class="row d-md-none">
+            <div class="my-5 d-flex flex-wrap justify-content-center position-relative">
+                <div class="bg-fourth banner-profil w-100 position-absolute " style="height: 150px;">
+    
+                </div>
+                <img class="img-profil" src="public/assets/img/profil1.png" alt="">
+                <div class="w-100 text-center mt-4 fc-secondary">
+                    <i class="fa-solid fa-star p-1"></i>
+                    <i class="fa-solid fa-star p-1"></i>
+                    <i class="fa-solid fa-star p-1"></i>
+                    <i class="fa-solid fa-star p-1"></i>
+                    <i class="fa-solid fa-star p-1"></i>
+                </div>
+                <div class="my-3">
+                    <p class="ff-primary fc-third fw-medium">
+                        Alice - 37 ans - NYC
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container-fluid fc-third d-none d-md-flex flex-wrap">
+        <h3 class="m-4">Mes articles</h3>
+        <div class="d-flex">
+            <div class="m-3 me-0 mt-4">
+                <img src="public/assets/img/image 17.png" alt="">
+            </div>
+            <div class="m-5 mt-4">
+                <h4>Prunier Mirabelle de Nancy - Amiens</h4>
+                <p>
+                    Je propose à la vente un superbe prunier de la variété Mirabelle 
+                    de Nancy, réputée pour la qualité 
+                    exceptionnelle de
+                    ses fruits. Ce prunier est un véritable joyau pour tout jardin, offrant à la fois beauté et abondance.
+                </p>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="m-3 me-0 mt-4">
+                <img src="public/assets/img/image 20.png" alt="">
+            </div>
+            <div class="m-5 mt-4">
+                <h4>Fraisier - Amiens  </h4>
+                <p>
+                    Je vous propose un fraisier exceptionnel à adopter pour embellir votre jardin et savourer des fraises fraîches à volonté. Ce fraisier est une véritable trouvaille pour les passionnés de culture fruitière, offrant des récoltes abondantes et délicieusement sucrées.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid p-0">
+        <div class="d-flex bg-silver py-5 flex-wrap justify-content-center align-items-center align-content-center">
+            <p class="mt-4 fs-1 ff-primary">Ma</p>
+            <img src="public/assets/img/bioIcon.png" alt="">
+            <p class="w-100 text-center my-5 fc-third">
+                “ Passionnée de jardinage depuis toujours, je m'appelle [Votre Nom] et je suis ravie de partager ma passion 
+                avec vous. Sur ce site, je propose une sélection soigneusement choisie de graines de fruits et légumes, pour vous aider à créer votre propre petit coin de paradis vert. Faites pousser de délicieuses récoltes tout en 
+                ajoutant une touche de beauté à votre jardin grâce à nos variétés sélectionnées avec amour. “
+            </p>
+            <button class="btn btn-third">Me contacter</button>
+        </div>
+        <div>
+            <p>Mes </p>
+        </div>
+    </section>
+
+    <section>
+        
+    </section>
+
+    <script src="public/assets/js/index.js"></script>
+</body>
+</html>

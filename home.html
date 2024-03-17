@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeny</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/assets/css/style.css">
+</head>
+
+<body>
+    <header class="my-5">
+
+        <!-- MOBILE -->
+        <nav class="d-md-none d-flex justify-content-between align-content-center align-items-center w-100 px-3">
+            <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
+            <i class="fa-solid fa-xmark cross-icon text-light hide" onclick="navbarEffect.run()"></i>
+            <img src="public/assets/img/brandIcon.png" alt="">
+            <i class="fa-solid fs-2 fa-magnifying-glass"></i>
+            <ul class="position-absolute ff-primary fs-4 menu hide-menu">
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Évènements</a></li>
+                <li><a href="">Échanges</a></li>
+                <li><a href="">À propos</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <!-- UP TO MOBILE LANDSCAPE -->
+        <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
+            <img src="public/assets/img/brandIcon.png" alt="">
+            <div class="w-75 d-flex flex-wrap justify-content-end align-content-between me-4">
+                <ul class="w-100 text-end ff-primary">
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">Accueil</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">Évènements</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">Échanges</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">À propos</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">FAQ</a></li>
+                </ul>
+                <div class="w-75">
+                    <input class="input-group rounded" type="search">
+                    <i class="fa-solid position-absolute fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </nav>
+
+        
+    </header>
+   
+    <section class="hero-container d-flex justify-content-center align-content-center align-items-center mt-5 mb-5">
+        <p class="ff-primary fs-4 fc-third fw-bolder d-md-inline d-none d-xs-none my-md-0 ml-md-4">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quo, dicta magni 
+            impedit accusamus fuga et? Adipisci?
+        </p>
+        <img src="public/assets/img/heroImage1.png" class='d-none d-md-block'>
+        <img src="public/assets/img/heroImage2.png" class="d-md-none w-100">
+        <!-- <p class="fs-5 d-md-none my-md-0 ml-md-4 bg-fourth text-light fw-6 text-center p-3 my-5 position-absolute w-75">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quo, dicta magni impedit sint maiores illum temporibus ipsam.
+        </p> -->
+    </section>
+
+    <section class="container-fluid text-center">
+        <div class="container">
+            <p class="p-3 my-5">
+                Bienvenue sur Greeny, le site communautaire dédié aux amoureux de la nature et du jardinage ! Sur Greeny, vous pouvez partager, échanger et découvrir une variété de graines, semences, fleurs et arbustes avec une communauté passionnée. Que vous soyez un novice en jardinage ou un vétéran chevronné, Greeny offre un espace convivial pour partager vos conseils, astuces et expériences.
+                Participez à des événements et réunions organisés par le site, où vous pourrez rencontrer d'autres membres, élargir votre réseau et enrichir vos connaissances. Greeny favorise l'échange intergénérationnel et encourage la croissance collective de compétences en jardinage. Rejoignez-nous sur Greeny, où la passion pour la verdure et la camaraderie fleurissent au cœur de notre communauté.
+            </p>
+            <div class="row mx-auto text-center outer-circle">
+                <div class="col-12 col-md-4 my-5">
+                    <img class="w-50 border-rounded bg-primary p-2" src="public/assets/img/category1.png" alt="">
+                    <p class="mt-4 fw-bold fc-third text-around-image">Graines</p>
+                </div>
+                <div class="col-12 col-md-4 my-5">
+                    <img class="w-50 border-rounded bg-secondary p-2" src="public/assets/img/category2.png" alt="">
+                    <p class="mt-4 fw-bold fc-third">Boûtures</p>
+                </div>
+                <div class="col-12 col-md-4 my-5">
+                    <img class="w-50 border-rounded bg-fourth p-2" src="public/assets/img/category3.png" alt="">
+                    <p class="mt-4 fw-bold fc-third">Arbres / Arbustes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="container-fluid container-events my-5 bg-fourth py-5">
+        <h2 class="text-center text-light fw-bold ff-primary">NOS EVENEMENTS</h2>
+        <!-- <div id="carouselExampleInterval" class="carousel w-100 w-sm-75 mx-auto slide d-sm-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="public/assets/img/calend1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="public/assets/img/calend2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="public/assets/img/calend3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container-fluid my-5 d-none d-md-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="public/assets/img/calend1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-4">
+                        <img src="public/assets/img/calend2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-4">
+                        <img src="public/assets/img/calend3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <section class="container container-temoignage py-5 text-center">
+        <h2 class="ff-primary fw-bold text-center">TEMOIGNAGES</h2>
+        <!-- SLIDER FOR MOBILE -->
+        <div class="temoignage-card col-md-4 d-md-none">
+            <img class="my-4" src="public/assets/img/image 12.png" alt="photos_profils_temoignages">
+            <div>
+                <p class="my-5 blub mx-auto">
+                    “ Le Lorem Ipsum est simplement du faux texte employé  dans la co impression. Le Lorem Ipsum  est le faux texte standard
+                </p>
+            </div>
+        </div>
+
+        <!--TEMOIGNAGES-->
+        <div class="d-none d-md-flex flex-md-wrap justify-content-around">
+            <div class="temoignage-card col-md-4">
+                <img class="my-4" src="public/assets/img/image 12.png" alt="photos_profils_temoignages">
+                <div>
+                    <p class="my-5 blub mx-auto">
+                        “ Le Lorem Ipsum est simplement du faux texte employé  dans la co impression. Le Lorem Ipsum  est le faux texte standard
+                    </p>
+                </div>
+            </div>
+            <div class="temoignage-card col-md-4">
+                <img class="my-4" src="public/assets/img/image 11.png" alt="photos_profils_temoignages">
+                <div>
+                    <p class="my-5 blub mx-auto">
+                        “ Le Lorem Ipsum est simplement du faux texte employé  dans la co impression. Le Lorem Ipsum  est le faux texte standard
+                    </p>
+                </div>
+            </div>
+            <div class="temoignage-card col-md-4">
+                <img class="my-4" src="public/assets/img/image 10.png" alt="photos_profils_temoignages">
+                <div>
+                    <p class="my-5 blub mx-auto">
+                        “ Le Lorem Ipsum est simplement du faux texte employé  dans la co impression. Le Lorem Ipsum  est le faux texte standard
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="public/assets/js/index.js"></script>
+</body>
+
+</html>

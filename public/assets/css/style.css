@@ -1,210 +1,244 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-.desktop-f {
-  display: none;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.mobile-f {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
+.fc-third {
+  color: #596A40;
+}
+
+.fc-primary {
+  color: #9fb33f;
+}
+
+.fc-secondary {
+  color: #d4863c;
+}
+
+.fc-fourth {
+  color: #93a25a;
+}
+
+.bg-primary {
+  background-color: #9fb33f !important;
+}
+
+.bg-secondary {
+  background-color: #d4863c !important;
+}
+
+.bg-third {
+  background-color: #596A40 !important;
+}
+
+.bg-fourth {
+  background-color: #93a25a;
+}
+
+.bg-silver {
+  background-color: rgb(225, 224, 222);
+}
+
+.btn-third {
+  font-size: large;
+  background-color: #596A40;
+  color: white;
+  min-width: 100px;
+  width: 300px;
+}
+.btn-third:hover {
+  border: 2px solid #596A40;
+  color: #596A40;
+}
+
+.ff-primary {
+  font-family: "Montserrat";
+}
+
+h2 {
+  margin: 1em 0 3.5em 0 !important;
+}
+
+.border-rounded {
+  border-radius: 50%;
+}
+
+.outer-circle {
+  border-radius: 100%;
+}
+
+.text-around-image {
+  border-radius: 100%;
+}
+
+nav img {
+  width: 120px !important;
+  height: 120px !important;
+}
+nav ul {
+  animation: bubbleEffectOnBurgerClick 2s forwards;
+  border-radius: 50%;
+  text-align: center;
+  width: 65%;
+}
+nav ul li {
+  list-style: none;
   margin-top: 1.2em;
 }
-.mobile-f i {
-  color: #484b25;
-  font-size: x-large;
-  margin: 0.8em;
-  z-index: 999;
-}
-.mobile-f i:hover {
-  cursor: pointer;
-}
-.mobile-f ul {
-  position: absolute;
-  text-align: center;
-  height: 55vh;
-  padding: 0;
-  top: 0%;
-  background-color: #d4863c;
-  width: 90%;
-  max-width: 400px;
-  min-width: 250px;
-  border-radius: 0 30% 40% 30%;
-  z-index: 999;
-}
-.mobile-f ul li {
-  list-style: none;
-  width: 100%;
-  font-size: large;
-  margin: 0.5em;
-}
-.mobile-f ul li a {
-  font-family: "Montserrat";
-  font-weight: bold;
+nav ul li a {
   color: white;
   text-decoration: none;
 }
-.mobile-f .hide {
+
+.show {
+  display: block;
+}
+
+.hide {
   display: none;
-  animation: hideNav 2s;
 }
-.mobile-f .show {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  animation: burgerToX 1s;
+
+.hide-menu {
+  display: none;
 }
-.mobile-f .active::before {
-  content: "";
+
+.show-menu {
+  display: block;
 }
-.mobile-f .fa-xmark {
-  animation: moveXmark 3s;
+
+@keyframes bubbleEffectOnBurgerClick {
+  from {
+    padding: 0;
+    width: 60%;
+    background-color: white;
+    top: -12%;
+    left: -40%;
+  }
+  to {
+    padding: 9em 5em 5em 7em;
+    top: -9%;
+    left: -22%;
+    width: 130%;
+    background-color: #d4863c;
+  }
+}
+.fa-xmark {
   color: white;
   font-size: xx-large;
   z-index: 9999;
+  overflow: hidden;
 }
-.mobile-f .hero-container {
-  margin-top: 2em;
-}
-@keyframes moveXmark {
-  0% {
-    color: rgba(255, 255, 255, 0);
-  }
-  100% {
-    color: white !important;
-  }
-}
-@keyframes burgerToX {
-  0% {
-    top: -20%;
-    left: -20%;
-  }
-  100% {
-    top: 0%;
-    left: 0;
-  }
-}
-@keyframes xToBurger {
-  0% {
-    top: 0;
-    left: 0;
-  }
-  100% {
-    top: -20%;
-    left: -20%;
-  }
-}
-@keyframes hideNav {}
 
-@media (width > 700px) {
-  body {
-    margin: 1em;
+@keyframes animeTemoignageTitle {
+  0% {
+    transform: scale(0) rotate(0deg);
   }
-  .mobile-f {
-    display: none;
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+.container-temoignage h2 {
+  animation: animeTemoignageTitle linear;
+  animation-timeline: view();
+  animation-range-start: cover 0%;
+  animation-range-end: cover 60%;
+}
+
+@keyframes animeEventsTitle {
+  0% {
+    transform: translateY(-20em);
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.container-events h2 {
+  animation: animeEventsTitle linear;
+  animation-timeline: view();
+  animation-range-start: cover 0%;
+  animation-range-end: cover 50%;
+}
+
+.temoignage-card {
+  min-width: 250px;
+}
+.temoignage-card p {
+  width: 60%;
+}
+.temoignage-card img {
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+i {
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0.5em;
+}
+
+.img-profil {
+  max-width: 220px;
+  z-index: -6;
+}
+
+.banner-profil {
+  z-index: -6666;
+  top: 10%;
+}
+
+@media (width > 768px) {
+  nav ul {
+    animation: none;
+  }
+  a {
+    text-decoration: none;
   }
   header {
-    display: flex;
-    align-content: center;
-    height: 20vh;
+    margin: 1em 1em 5em 1em;
   }
-  .desktop-f {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    margin: 1.5em 1em;
+  header nav img {
+    width: 140px;
+    height: 140px;
   }
-  .desktop-f img {
-    max-width: 120px;
-    height: 120px;
-    margin: 2em 1.8 0 2em;
-  }
-  .desktop-f div {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: end;
-    width: 80%;
-    margin-right: 5em;
-  }
-  .desktop-f div ul {
-    font-size: large;
-    width: 100%;
-    display: inline-block;
-    background-color: inherit;
-    margin: 0;
-    padding: 0;
-    text-align: end;
-  }
-  .desktop-f div ul li {
-    display: inline;
-    margin: 1.5em;
-  }
-  .desktop-f div ul li a {
-    color: #484b25;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .desktop-f div div {
-    width: 50%;
+  header nav div div {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: start;
-    margin-bottom: 3em;
-    margin-left: 5em;
+    max-width: 600px;
   }
-  .desktop-f div div input {
+  header nav div div input {
     padding-left: 2em;
-    overflow: hidden;
-    outline: none;
   }
-  .desktop-f div div i {
+  header nav div div i {
     position: absolute;
     font-size: large;
-    color: #484b25;
+    color: #596A40;
     border-radius: 5px;
     padding-left: 0.5em;
-  }
-  .hero-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    height: auto;
-    margin-top: 4.5em;
-    width: 110%;
-    font-family: "Montserrat";
-  }
-  .hero-container p {
-    width: 40%;
-    margin: 5em 2.5em;
+    cursor: pointer;
   }
   .hero-container img {
-    width: 60%;
-    max-height: 500px;
+    min-width: 60%;
   }
-}
-@media (width < 1050px) {
-  .desktop-f {
-    flex-wrap: nowrap;
-    align-content: center;
+  .hero-container p {
+    margin-left: 1.75em;
   }
-  .desktop-f img {
-    margin: 0.5em;
+  .img-profil {
+    max-width: 400px;
+    min-width: 200px;
   }
-  .desktop-f div {
-    flex-wrap: wrap;
-  }
-  .desktop-f div ul li {
-    margin: 0.5em;
-  }
-  .desktop-f div div {
-    width: 60%;
-    margin-right: 0;
+  .container-profil .fa-star {
+    color: #d4863c;
   }
 }
 

@@ -1,30 +1,22 @@
 class NavbarEffect {
 
-    burgerMenu = document.getElementsByClassName("burger-icon")[0];
-    itemsNav = document.getElementsByClassName("nav-items")[0];
+    burger = document.getElementsByClassName("burger-icon")[0];
+    cross = document.getElementsByClassName("cross-icon")[0];
+    menu = document.getElementsByClassName("menu")[0];
 
-    init = () => {
-        this.burgerMenu.addEventListener("click", () => {
-            if(this.itemsNav.classList.contains("hide")){
-                this.itemsNav.classList.add("show")
-                this.itemsNav.classList.remove("hide")
-            }else{
-                this.itemsNav.classList.add("hide")
-                this.itemsNav.classList.remove("show")
-            }
-        })  
-    }
-
-    transformBurgerIcon = () => {
-        if(this.burgerMenu.classList.contains("fa-bars")){
-            this.burgerMenu.classList.replace("fa-bars", "fa-xmark")
+    run = () => {
+        if(this.burger.classList.contains("hide")){
+            this.burger.classList.remove("hide");
+            this.cross.classList.add("hide");
+            this.menu.classList.add("hide-menu")
         }else{
-            this.burgerMenu.classList.replace("fa-xmark", "fa-bars")
+            this.burger.classList.add("hide");
+            this.cross.classList.remove("hide");
+            this.menu.classList.remove("hide-menu")
+
         }
     }
-
+     
 }
 
 let navbarEffect = new NavbarEffect();
-
-navbarEffect.init();
