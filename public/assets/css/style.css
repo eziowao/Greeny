@@ -34,6 +34,8 @@ h6 {
     background-color: #D4863C;
 }
 
+/* -------------------- Header -------------------- */
+
 .navbar-nav .nav-item .nav-link:hover {
     color: #D4863C;
 }
@@ -74,4 +76,10 @@ h6 {
 
 .rounded-18 {
     border-radius: 18px;
+}
+
+.img-articles {
+    width: 430px;
+    max-width: 100%;
+    height: auto;
 }
