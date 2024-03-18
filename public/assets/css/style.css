@@ -1,55 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
 body {
   overflow-x: hidden;
 }
 
-.fc-third {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  font-size: 18px;
+}
+
+.text_titlegreen {
+  color: #484B25;
+}
+
+.text_darkgreen {
   color: #596A40;
 }
 
-.fc-primary {
-  color: #9fb33f;
+.text_orange {
+  color: #D4863C;
 }
 
-.fc-secondary {
-  color: #d4863c;
+.bg_lightgreen {
+  background-color: #93A25A;
 }
 
-.fc-fourth {
-  color: #93a25a;
+.bg_silver {
+  background-color: rgb(224, 224, 224);
 }
 
-.bg-primary {
-  background-color: #9fb33f !important;
+.bg_orange {
+  background-color: #D4863C;
 }
 
-.bg-secondary {
-  background-color: #d4863c !important;
+.navbar-nav .nav-item .nav-link:hover {
+  color: #D4863C;
 }
 
-.bg-third {
-  background-color: #596A40 !important;
-}
-
-.bg-fourth {
-  background-color: #93a25a;
-}
-
-.bg-silver {
-  background-color: rgb(225, 224, 222);
-}
-
-.btn-third {
-  font-size: large;
-  background-color: #596A40;
-  color: white;
-  min-width: 50px;
-}
-
-.btn-third:hover {
-  color: white;
-  background-color: #596A40;
+.form-control:hover {
+  box-shadow: 0px 0px 10px -2px;
 }
 
 hr {
@@ -57,12 +57,12 @@ hr {
   opacity: 0;
 }
 
-.ff-primary {
-  font-family: "Montserrat";
+.no-hover .form-control:hover {
+  box-shadow: none;
 }
 
-h2 {
-  margin: 1em 0 3.5em 0 !important;
+.rounded-24 {
+  border-radius: 24px;
 }
 
 .border-rounded {
@@ -73,7 +73,6 @@ nav img {
   width: 120px !important;
   height: 120px !important;
 }
-
 nav ul {
   animation: bubbleEffectOnBurgerClick 2s forwards;
   z-index: 99;
@@ -81,15 +80,18 @@ nav ul {
   text-align: center;
   width: 65%;
 }
-
 nav ul li {
   list-style: none;
   margin-top: 1.2em;
 }
-
 nav ul li a {
   color: white;
   text-decoration: none;
+}
+
+.active {
+  border-bottom: 3px solid #D4863C;
+  padding-bottom: 0.5em;
 }
 
 .show {
@@ -98,6 +100,10 @@ nav ul li a {
 
 .hide {
   display: none;
+}
+
+.modal-dialog {
+  top: 35%;
 }
 
 .hide-menu {
@@ -116,33 +122,32 @@ nav ul li a {
     top: -12%;
     left: -40%;
   }
-
   to {
     padding: 9em 5em 5em 7em;
     top: -9%;
-    left: -26%;
+    left: -30%;
     width: 130%;
-    background-color: #d4863c;
+    background-color: #D4863C;
+    text-align: center;
   }
 }
-
 .fa-xmark {
   color: white;
   font-size: xx-large;
   z-index: 9999;
   overflow: hidden;
+  position: absolute;
+  left: 1em;
 }
 
 @keyframes animeTemoignageTitle {
   0% {
     transform: scale(0) rotate(0deg);
   }
-
   100% {
     transform: scale(1) rotate(360deg);
   }
 }
-
 .container-temoignage h2 {
   animation: animeTemoignageTitle linear;
   animation-timeline: view();
@@ -155,31 +160,25 @@ nav ul li a {
     transform: translateY(-20em);
     opacity: 0;
   }
-
   83% {
     opacity: 0;
   }
-
   84% {
     opacity: 1;
   }
-
   99% {
     opacity: 1;
   }
-
   100% {
     transform: translateY(0);
   }
 }
-
 .container-events h2 {
   animation: animeEventsTitle linear;
   animation-timeline: view();
   animation-range-start: cover 0%;
   animation-range-end: cover 50%;
 }
-
 .container-events img {
   max-width: 270px;
 }
@@ -187,14 +186,12 @@ nav ul li a {
 .temoignage-card {
   min-width: 250px;
 }
-
 .temoignage-card p {
   width: 60%;
 }
-
 .temoignage-card img {
   border-radius: 50%;
-  border: 5px solid #d4863c;
+  border: 5px solid #D4863C;
   max-width: 200px;
 }
 
@@ -213,7 +210,6 @@ i {
   z-index: -6666;
   top: 10%;
   height: 100px;
-  border: 3px 0px 3px 0px solid #d4863c !important;
 }
 
 /* Footer */
@@ -242,32 +238,28 @@ footer p {
 @media (width > 768px) {
   nav ul {
     animation: none;
+    margin: 0;
   }
-
   a {
+    color: #484B25;
     text-decoration: none;
   }
-
   header {
     margin: 1em 1em 5em 1em;
   }
-
   header nav img {
     width: 140px;
     height: 140px;
   }
-
   header nav div div {
     position: relative;
     display: flex;
     align-items: center;
     max-width: 600px;
   }
-
   header nav div div input {
     padding-left: 2em;
   }
-
   header nav div div i {
     position: absolute;
     font-size: large;
@@ -276,39 +268,19 @@ footer p {
     padding-left: 0.5em;
     cursor: pointer;
   }
-
-  .btn-third {
-    font-size: large;
-    min-width: 100px;
-    width: 300px;
-  }
-
-  .btn-third:hover {
-    border: 2px solid #596A40;
-    color: #596A40;
-    background-color: white;
-  }
-
   .hero-container img {
     min-width: 60%;
   }
-
   .hero-container p {
     margin-left: 1.75em;
   }
-
   .img-profil {
-    max-width: 400px;
+    max-width: 350px;
     min-width: 200px;
   }
-
-  .container-profil+.fa-star {
+  .container-profil .fa-star {
     color: #d4863c;
   }
-}
-
-.bg_orange {
-  background-color: #D4863C;
 }
 
 /*# sourceMappingURL=style.css.map */

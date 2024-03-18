@@ -19,15 +19,31 @@
             <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
             <i class="fa-solid fa-xmark cross-icon text-light hide fs-2" onclick="navbarEffect.run()"></i>
             <img src="public/assets/img/brandIcon.png" alt="icon de la marque">
-            <i class="fa-solid fs-2 fa-magnifying-glass"></i>
+            <i class="fa-solid fs-2 fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
             <ul class="position-absolute fs-4 menu hide-menu">
                 <li><a href="">Accueil</a></li>
                 <li><a href="">Évènements</a></li>
                 <li><a href="">Échanges</a></li>
                 <li><a href="">À propos</a></li>
                 <li><a href="">FAQ</a></li>
+                <li><a href="">Inscription / Connexion</a></li>
             </ul>
         </nav>
+
+        <!-- MODAL SEARCH BAR MOBILE ON CLICK -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Vous recherchez ?</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body w-100">
+                  <input type="search">
+                </div>
+              </div>
+            </div>
+        </div>
 
         <!-- UP THAN MOBILE -->
         <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
@@ -184,9 +200,9 @@
                         <p class="text-light text-center text-lg-start">contact@lamanuecology.com</p>
                     </div>
                     <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                        <img src="./public/assets/img/instagram.png" height="30" class="m-2" alt="Logo Instagram">
-                        <img src="./public/assets/img/twitter.png" height="30" class="m-2" alt="Logo Twitter / X">
-                        <img src="./public/assets/img/facebook.png" height="30" class="m-2" alt="Logo Facebook">
+                        <img src="./public/assets/img/icon_ig.png" height="30" class="m-2" alt="Logo Instagram">
+                        <img src="./public/assets/img/icon_twitter.png" height="30" class="m-2" alt="Logo Twitter / X">
+                        <img src="./public/assets/img/icon_fb.png" height="30" class="m-2" alt="Logo Facebook">
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <p class="mt-3 mb-0 text-center text-lg-end"><a class="text-decoration-none
@@ -206,6 +222,7 @@
         </div>
     </footer>
 
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="public/assets/js/index.js"></script>
 </body>
 

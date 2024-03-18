@@ -3,68 +3,81 @@
 body {
     overflow-x: hidden;
 }
-// COLORS 
 
-$primary-color : #9fb33f;
-$secondary-color : #d4863c;
-$third-color: #596A40;
-$fourth-color: #93a25a;
-
-.fc-third {
-    color: $third-color;
-}
-.fc-primary {
-    color: $primary-color;
-}
-.fc-secondary {
-    color: $secondary-color;
-}
-.fc-fourth {
-    color: $fourth-color;
-}
-.bg-primary {
-    background-color: $primary-color !important;
-}
-.bg-secondary {
-    background-color: $secondary-color !important;
-}
-.bg-third {
-    background-color: $third-color !important;
-}
-.bg-fourth {
-    background-color: $fourth-color;
-}
-.bg-silver {
-    background-color: rgb(225, 224, 222);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 
-.btn-third {
-    font-size: large;
-    background-color: $third-color;
-    color: white;
-    min-width: 50px;
-    &:hover {
-        color: white;
-        background-color: $third-color;
-    }
+* {
+    font-family: 'Lato', sans-serif;
 }
+
+:root {
+    font-size: 18px;
+}
+
+/////////////////////////////// COLORS 
+
+
+$textTitleGreen : #484B25;
+$textDarkGreen : #596A40;
+$textOrange : #D4863C;
+$silver: rgb(224, 224, 224);
+
+$bgLightGreen : #93A25A;
+$bgOrange : #D4863C;
+
+
+.text_titlegreen {
+    color: $textTitleGreen;
+}
+
+.text_darkgreen {
+    color: $textDarkGreen;
+}
+
+.text_orange {
+    color: $textOrange;
+}
+
+.bg_lightgreen {
+    background-color: $bgLightGreen;
+}
+
+.bg_silver {
+    background-color: $silver;
+}
+
+.bg_orange {
+    background-color: $bgOrange;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: $bgOrange;
+}
+
+.form-control:hover {
+    box-shadow: 0px 0px 10px -2px;
+}
+
 
 hr {
     margin-top: 3em !important;
     opacity: 0;
 }
 
-//FONTS-FAMILIES
-
-$font-primary : "Montserrat";
-
-.ff-primary {
-    font-family: $font-primary;
+.no-hover .form-control:hover {
+    box-shadow: none;
 }
 
-h2 {
-    margin: 1em 0 3.5em 0 !important;
+.rounded-24 {
+    border-radius: 24px;
 }
 
 .border-rounded {
@@ -92,6 +105,12 @@ nav {
         }
     }
 }
+
+.active {
+    border-bottom: 3px solid $textOrange;
+    padding-bottom: .5em;
+}
+
 .show {
     display: block;
 }
@@ -100,10 +119,14 @@ nav {
     display: none;
 }
 
-.hide-menu {
-    display: none;
+.modal-dialog {
+    top: 35%;
 }
 
+.hide-menu {
+    display: none;
+  }
+  
 .show-menu {
     display: block;
 }
@@ -119,9 +142,10 @@ nav {
     to {
         padding: 9em 5em 5em 7em;
         top: -9%;
-        left: -26%;
+        left: -30%;
         width: 130%;
-        background-color: $secondary-color;
+        background-color: $bgOrange;
+        text-align: center;
     }
 }
 
@@ -130,6 +154,8 @@ nav {
     font-size: xx-large;
     z-index: 9999;
     overflow: hidden;
+    position: absolute;
+    left: 1em;
 }
 
 @keyframes animeTemoignageTitle {
@@ -189,7 +215,7 @@ nav {
     }
     img {
         border-radius: 50%;
-        border: 5px solid $secondary-color;
+        border: 5px solid $textOrange;
         max-width: 200px;
     }
 }
@@ -209,7 +235,6 @@ i {
     z-index: -6666;
     top: 10%;
     height: 100px;
-    border: 3px 0px 3px 0px solid $secondary-color !important;
 }
 
 /* Footer */
@@ -242,9 +267,11 @@ footer p {
 
     nav ul {
         animation: none;
+        margin: 0;
     }
 
     a {
+        color: $textTitleGreen;
         text-decoration: none;
     }
     
@@ -267,24 +294,13 @@ footer p {
                     i {
                         position: absolute;
                         font-size: large;
-                        color: $third-color;
+                        color: $textDarkGreen;
                         border-radius: 5px;
                         padding-left: .5em;
                         cursor: pointer;
                     }
                 }
             }
-        }
-    }
-
-    .btn-third {
-        font-size: large;
-        min-width: 100px;
-        width: 300px;
-        &:hover {
-            border: 2px solid $third-color;
-            color: $third-color;
-            background-color: white;
         }
     }
     
@@ -298,19 +314,15 @@ footer p {
     }
 
     .img-profil {
-        max-width: 400px;
+        max-width: 350px;
         min-width: 200px;
     }
 
 
     .container-profil {
-        +
         .fa-star {
             color: #d4863c;
         }
-    }
-
-    
+    }   
     
 }
-
