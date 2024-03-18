@@ -38,8 +38,9 @@ h6 {
     background-color: #D4863C;
 }
 
-/* -------------------- Header -------------------- */
+/* ---------------------------------------- Header ---------------------------------------- */
 
+/* ------------ SW ------------ */
 .navbar-nav .nav-item .nav-link:hover {
     color: #D4863C;
 }
@@ -53,7 +54,9 @@ h6 {
     box-shadow: none;
 }
 
-/* -------------------- content-------------------- */
+/* ---------------------------------------- Pages ---------------------------------------- */
+
+/* ------------ Personal profil & FAQ SW  ------------ */
 
 .no-hover .form-control:hover {
     box-shadow: none;
@@ -83,3 +86,21 @@ h6 {
     max-width: 100%;
     height: auto;
 }
+
+/* ------------ About us Hafida  ------------ */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+}
+
+.groupeImage {
+    border-radius: 24px;
+    width: 100%;
+  }
+
+  .text-justify {
+    text-align: justify;
+  }
