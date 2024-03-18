@@ -14,39 +14,39 @@
     <header class="my-5">
 
         <!-- MOBILE -->
-        <nav class="d-md-none d-flex justify-content-between align-content-center align-items-center w-100 px-3">
-            <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
-            <i class="fa-solid fa-xmark cross-icon text-light hide" onclick="navbarEffect.run()"></i>
-            <img src="public/assets/img/brand-icon.png" alt="">
-            <i class="fa-solid fs-2 fa-magnifying-glass"></i>
-            <ul class="position-absolute ff-primary fs-4 menu hide-menu">
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Évènements</a></li>
-                <li><a href="">Échanges</a></li>
-                <li><a href="">À propos</a></li>
-                <li><a href="">FAQ</a></li>
-            </ul>
-        </nav>
-
-        <!-- UP TO MOBILE LANDSCAPE -->
-        <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
-            <img src="public/assets/img/brand-icon.png" alt="">
-            <div class="w-75 d-flex flex-wrap justify-content-end align-content-between me-4">
-                <ul class="w-100 text-end ff-primary">
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">Accueil</a></li>
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">Évènements</a></li>
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">Échanges</a></li>
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">À propos</a></li>
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">FAQ</a></li>
+        <div class="container">
+            <nav class="d-md-none d-flex justify-content-between align-content-center align-items-center w-100 px-3">
+                <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
+                <i class="fa-solid fa-xmark cross-icon text-light hide" onclick="navbarEffect.run()"></i>
+                <img src="public/assets/img/brand-icon.png" alt="">
+                <i class="fa-solid fs-2 fa-magnifying-glass"></i>
+                <ul class="position-absolute ff-primary fs-4 menu hide-menu">
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Évènements</a></li>
+                    <li><a href="">Échanges</a></li>
+                    <li><a href="">À propos</a></li>
+                    <li><a href="">FAQ</a></li>
                 </ul>
-                <div class="w-75">
-                    <input class="input-group rounded" type="search">
-                    <i class="fa-solid position-absolute fa-magnifying-glass"></i>
-                </div>
-            </div>
-        </nav>
+            </nav>
 
-        
+            <!-- UP TO MOBILE LANDSCAPE -->
+            <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
+                <img src="public/assets/img/brand-icon.png" alt="">
+                <div class="w-75 d-flex flex-wrap justify-content-end align-content-between me-4">
+                    <ul class="w-100 text-end ff-primary">
+                        <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">Accueil</a></li>
+                        <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">Évènements</a></li>
+                        <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">Échanges</a></li>
+                        <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">À propos</a></li>
+                        <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">FAQ</a></li>
+                    </ul>
+                    <div class="w-75">
+                        <input class="input-group rounded" type="search">
+                        <i class="fa-solid position-absolute fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -67,20 +67,20 @@
                         quis culpa, alias autem optio, quod minus amet.
                     </p>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
                     <img src="./public/assets/img/des-graines 1.png" alt="sac de carrotte" class="d-flex img-fluid">
                 </div>
             </div>
         </div>
 
         <!-- category -->
-        <div class="container-fluid category-bg">
-            <div class="container text-center d-flex flex-wrap justify-content-around align-items-center img-fluid p-6">
+        <div class="container-fluid category-bg py-5 mb-5">
+            <div class="container text-center d-flex flex-wrap justify-content-around align-items-center img-fluid">
                 <div class="row">
                     <div class="container pb-4 d-flex justify-content-center">
                         <div class="row justify-content-center">
                             <div class="col-12 fw-bold mx-5">
-                                <h1 id="category">Catégories</h1>
+                                <h1 id="category" class="fs-2">Catégories</h1>
                             </div>
                         </div>
                     </div>
@@ -150,7 +150,8 @@
                                         <li>
                                             <a class="dropdown-item" href="#">
                                                 <p>Article 1</p>
-                                                <img src="./public/assets/img/plant1.jpg" class="card-img-top" alt="Fleur d'oranger">
+                                                <img src="./public/assets/img/plant1.jpg" class="card-img-top"
+                                                    alt="Fleur d'oranger">
                                             </a>
                                             <div class="card" style="width: 10rem">
                                                 <div class="card-body">
@@ -161,7 +162,8 @@
                                         <li>
                                             <a class="dropdown-item" href="#">
                                                 <p>Article 2</p>
-                                                <img src="./public/assets/img/plant2.jpg" class="card-img-top" alt="Magnolia blanc">
+                                                <img src="./public/assets/img/plant2.jpg" class="card-img-top"
+                                                    alt="Magnolia blanc">
                                             </a>
                                             <div class="card" style="width: 10rem">
                                                 <div class="card-body">
@@ -172,7 +174,8 @@
                                         <li>
                                             <a class="dropdown-item" href="#">
                                                 <p>Article 3</p>
-                                                <img src="./public/assets/img/plant3.jpg" class="card-img-top" alt="Fleurs blanches">
+                                                <img src="./public/assets/img/plant3.jpg" class="card-img-top"
+                                                    alt="Fleurs blanches">
                                             </a>
                                             <div class="card" style="width: 10rem">
                                                 <div class="card-body">
@@ -199,7 +202,8 @@
                                         <li>
                                             <a class="dropdown-item" href="./product.html">
                                                 <p>Article 1</p>
-                                                <img src="./public/assets/img/prunier.png" class="card-img-top" alt="Prunier Mirabelle de Nancy">
+                                                <img src="./public/assets/img/prunier.png" class="card-img-top"
+                                                    alt="Prunier Mirabelle de Nancy">
                                             </a>
                                             <div class="card" style="width: 10rem">
                                                 <div class="card-body">
@@ -210,7 +214,8 @@
                                         <li>
                                             <a class="dropdown-item" href="#">
                                                 <p>Article 2</p>
-                                                <img src="./public/assets/img/tree1.jpg" class="card-img-top" alt="Pommier">
+                                                <img src="./public/assets/img/tree1.jpg" class="card-img-top"
+                                                    alt="Pommier">
                                             </a>
                                             <div class="card" style="width: 10rem">
                                                 <div class="card-body">
@@ -221,7 +226,8 @@
                                         <li>
                                             <a class="dropdown-item" href="#">
                                                 <p>Article 3</p>
-                                                <img src="./public/assets/img/tree2.jpg" class="card-img-top" alt="Bambou">
+                                                <img src="./public/assets/img/tree2.jpg" class="card-img-top"
+                                                    alt="Bambou">
                                             </a>
                                             <div class="card" style="width: 10rem">
                                                 <div class="card-body">
@@ -248,7 +254,8 @@
                                         <li>
                                             <a class="dropdown-item" href="#">
                                                 <p>Article 1</p>
-                                                <img src="./public/assets/img/bush1.jpg" class="card-img-top" alt="Bonzai">
+                                                <img src="./public/assets/img/bush1.jpg" class="card-img-top"
+                                                    alt="Bonzai">
                                             </a>
                                             <div class="card" style="width: 10rem">
                                                 <div class="card-body">
@@ -259,7 +266,8 @@
                                         <li>
                                             <a class="dropdown-item" href="#">
                                                 <p>Article 2</p>
-                                                <img src="./public/assets/img/bush2.jpg" class="card-img-top" alt="Arbuste de jardin">
+                                                <img src="./public/assets/img/bush2.jpg" class="card-img-top"
+                                                    alt="Arbuste de jardin">
                                             </a>
                                             <div class="card" style="width: 10rem">
                                                 <div class="card-body">
@@ -270,7 +278,8 @@
                                         <li>
                                             <a class="dropdown-item" href="#">
                                                 <p>Article 3</p>
-                                                <img src="./public/assets/img/bush3.jpg" class="card-img-top" alt="Buisson">
+                                                <img src="./public/assets/img/bush3.jpg" class="card-img-top"
+                                                    alt="Buisson">
                                             </a>
                                             <div class="card" style="width: 10rem">
                                                 <div class="card-body">
