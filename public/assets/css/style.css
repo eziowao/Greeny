@@ -28,8 +28,16 @@ h6 {
   color: #596A40;
 }
 
+.text_orange {
+  color: #D4863C;
+}
+
 .bg_lightgreen {
   background-color: #93A25A;
+}
+
+.bg_silver {
+  background-color: rgb(224, 224, 224);
 }
 
 .bg_orange {
@@ -81,6 +89,11 @@ nav ul li a {
   text-decoration: none;
 }
 
+.active {
+  border-bottom: 3px solid #D4863C;
+  padding-bottom: 0.5em;
+}
+
 .show {
   display: block;
 }
@@ -108,7 +121,7 @@ nav ul li a {
   to {
     padding: 9em 5em 5em 7em;
     top: -9%;
-    left: -26%;
+    left: -28%;
     width: 130%;
     background-color: #D4863C;
   }
@@ -218,9 +231,7 @@ footer p {
 @media (width > 768px) {
   nav ul {
     animation: none;
-  }
-  nav ul li a {
-    color: #484B25;
+    margin: 0;
   }
   a {
     color: #484B25;
