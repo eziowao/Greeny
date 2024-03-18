@@ -119,12 +119,16 @@ nav {
     display: none;
 }
 
+.modal-dialog {
+    top: 35%;
+}
+
 .hide-menu {
     display: none;
   }
   
 .show-menu {
-display: block;
+    display: block;
 }
 
 @keyframes bubbleEffectOnBurgerClick {
@@ -138,9 +142,10 @@ display: block;
     to {
         padding: 9em 5em 5em 7em;
         top: -9%;
-        left: -28%;
+        left: -30%;
         width: 130%;
         background-color: $bgOrange;
+        text-align: center;
     }
 }
 
@@ -149,6 +154,8 @@ display: block;
     font-size: xx-large;
     z-index: 9999;
     overflow: hidden;
+    position: absolute;
+    left: 1em;
 }
 
 @keyframes animeTemoignageTitle {

@@ -18,22 +18,39 @@
             <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
             <i class="fa-solid fa-xmark cross-icon text-light hide fs-2" onclick="navbarEffect.run()"></i>
             <img src="public/assets/img/brandIcon.png" alt="image de la marque">
-            <i class="fa-solid fs-2 fa-magnifying-glass"></i>
-            <ul class="position-absolute fs-4 menu hide-menu">
+            <i class="fa-solid fs-2 fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            <ul class="position-absolute fs-5 my-3 menu hide-menu">
                 <li><a href="">Accueil</a></li>
                 <li><a href="">Évènements</a></li>
                 <li><a href="">Échanges</a></li>
                 <li><a href="">À propos</a></li>
                 <li><a href="">FAQ</a></li>
+                <li><a href="">Connexion</a></li>
+                <li><a href="">Inscription</a></li>
             </ul>
         </nav>
+
+        <!-- MODAL SEARCH BAR MOBILE ON CLICK -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Vous recherchez ?</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body w-100">
+                  <input type="search">
+                </div>
+              </div>
+            </div>
+          </div>
 
         <!-- UP TO MOBILE LANDSCAPE -->
         <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
             <img src="public/assets/img/brandIcon.png" class="ms-2" alt="icon de la marque">
             <div class="w-100 d-flex flex-wrap justify-content-end align-content-between me-4">
                 <ul class="w-100 text-end p-0">
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen" href="">Accueil</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen active" href="">Accueil</a></li>
                     <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen" href="">Évènements</a></li>
                     <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen" href="">Échanges</a></li>
                     <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen" href="">À propos</a></li>
@@ -51,19 +68,16 @@
 
     </header>
    
-    <section class="hero-container d-flex justify-content-center align-content-center align-items-center mt-5 mb-5">
+    <section class="hero-container d-flex justify-content-center align-content-center align-items-center my-5">
         <p class="fs-4 text_darkgreen fw-bolder d-md-inline d-none d-xs-none my-md-0 ml-md-4">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quo, dicta magni 
             impedit accusamus fuga et? Adipisci?
         </p>
         <img src="public/assets/img/heroImage1.png" class='d-none d-md-block' alt="image page principale jeune pousses">
         <img src="public/assets/img/heroImage2.png" class="d-md-none w-100" alt="image page principale jeunes pousses">
-        <!-- <p class="fs-5 d-md-none my-md-0 ml-md-4 bg-fourth text-light fw-6 text-center p-3 my-5 position-absolute w-75">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quo, dicta magni impedit sint maiores illum temporibus ipsam.
-        </p> -->
     </section>
 
-    <section class="container-fluid text-center">
+    <section class="container-fluid text-center my-5">
         <div class="container">
             <p class="p-3 my-5">
                 Bienvenue sur Greeny, le site communautaire dédié aux amoureux de la nature et du jardinage ! Sur Greeny, vous pouvez partager, échanger et découvrir une variété de graines, semences, fleurs et arbustes avec une communauté passionnée. Que vous soyez un novice en jardinage ou un vétéran chevronné, Greeny offre un espace convivial pour partager vos conseils, astuces et expériences.
@@ -72,15 +86,15 @@
             <div class="row mx-auto text-center outer-circle">
                 <div class="col-12 col-md-4 my-5">
                     <img class="w-50 border-rounded bg_lightgreen p-2" src="public/assets/img/category1.png" alt="image graine">
-                    <p class="mt-4 fw-bold fc-third text-around-image">Graines</p>
+                    <p class="mt-4 fw-bold text_darkgreen text-around-image">Graines</p>
                 </div>
                 <div class="col-12 col-md-4 my-5">
                     <img class="w-50 border-rounded bg_orange p-2" src="public/assets/img/category2.png" alt="image arbre">
-                    <p class="mt-4 fw-bold fc-third">Boûtures</p>
+                    <p class="mt-4 fw-bold text_darkgreen">Boûtures</p>
                 </div>
                 <div class="col-12 col-md-4 my-5">
                     <img class="w-50 border-rounded bg_lightgreen p-2" src="public/assets/img/category3.png" alt="image bouture">
-                    <p class="mt-4 fw-bold fc-third">Arbres / Arbustes</p>
+                    <p class="mt-4 fw-bold text_darkgreen">Arbres / Arbustes</p>
                 </div>
             </div>
         </div>
@@ -178,9 +192,9 @@
                         <p class="text-light text-center text-lg-start">contact@lamanuecology.com</p>
                     </div>
                     <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                        <img src="./public/assets/img/instagram.png" height="30" class="m-2" alt="Logo Instagram">
-                        <img src="./public/assets/img/twitter.png" height="30" class="m-2" alt="Logo Twitter / X">
-                        <img src="./public/assets/img/facebook.png" height="30" class="m-2" alt="Logo Facebook">
+                        <img src="./public/assets/img/icon_ig.png" height="30" class="m-2" alt="Logo Instagram">
+                        <img src="./public/assets/img/icon_twitter.png" height="30" class="m-2" alt="Logo Twitter / X">
+                        <img src="./public/assets/img/icon_fb.png" height="30" class="m-2" alt="Logo Facebook">
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <p class="mt-3 mb-0 text-center text-lg-end"><a class="text-decoration-none
@@ -200,6 +214,7 @@
         </div>
     </footer>
 
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="public/assets/js/index.js"></script>
 </body>
 
