@@ -10,46 +10,51 @@
 </head>
 
 <body>
-    <header>
+    <!-- NAVBAR -->
+    <header class="my-5">
+
         <!-- MOBILE -->
-        <nav class="mobile-f">
-            <i class="fa-solid fa-bars burger-icon" onclick="navbarEffect.transformBurgerIcon()"></i>
-            <a href="#"><img src="public/assets/img/brand-icon.png" alt="Logo"></a>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <ul class="nav-items hide">
-                <li><a class="active" href="">Accueil</a></li>
-                <li><a href="">Evenement</a></li>
-                <li><a href="">Echange</a></li>
-                <li><a href="">A propos</a></li>
+        <nav class="d-md-none d-flex justify-content-between align-content-center align-items-center w-100 px-3">
+            <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
+            <i class="fa-solid fa-xmark cross-icon text-light hide" onclick="navbarEffect.run()"></i>
+            <img src="public/assets/img/brand-icon.png" alt="">
+            <i class="fa-solid fs-2 fa-magnifying-glass"></i>
+            <ul class="position-absolute ff-primary fs-4 menu hide-menu">
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Évènements</a></li>
+                <li><a href="">Échanges</a></li>
+                <li><a href="">À propos</a></li>
                 <li><a href="">FAQ</a></li>
             </ul>
         </nav>
 
         <!-- UP TO MOBILE LANDSCAPE -->
-        <nav class="desktop-f">
-            <a href="#"><img src="public/assets/img/brand-icon.png" alt="Logo"></a>
-            <div>
-                <ul class="nav-items-desktop">
-                    <li><a class="active" href="">Accueil</a></li>
-                    <li><a href="">Evenement</a></li>
-                    <li><a href="">Echange</a></li>
-                    <li><a href="">A propos</a></li>
-                    <li><a href="">FAQ</a></li>
+        <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
+            <img src="public/assets/img/brand-icon.png" alt="">
+            <div class="w-75 d-flex flex-wrap justify-content-end align-content-between me-4">
+                <ul class="w-100 text-end ff-primary">
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">Accueil</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">Évènements</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">Échanges</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">À propos</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">FAQ</a></li>
                 </ul>
-                <div>
+                <div class="w-75">
                     <input class="input-group rounded" type="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid position-absolute fa-magnifying-glass"></i>
                 </div>
             </div>
         </nav>
+
+        
     </header>
 
     <main>
         <!-- hero -->
-        <div class="container hero d-flex align-items-center mb-5">
+        <div class="container hero d-flex align-items-center text-md-start mb-5">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-6 p-6">
-                    <p>
+                <div class="col-12 col-lg-6 ">
+                    <p class="text-lg-start">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
                         veritatis voluptatum cumque culpa, tenetur soluta, nihil
                         doloremque repudiandae tempore minima voluptates vel accusantium
@@ -63,216 +68,218 @@
                     </p>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <img src="./public/assets/img/Legumes.jpg" alt="sac de carrotte" class="d-flex img-fluid">
+                    <img src="./public/assets/img/des-graines 1.png" alt="sac de carrotte" class="d-flex img-fluid">
                 </div>
             </div>
         </div>
 
         <!-- category -->
-        <div class="container-fluid category-bg text-center d-flex align-items-center img-fluid p-6">
-            <div class="row">
-                <div class="container pb-4 d-flex justify-content-center">
-                    <div class="row justify-content-center">
-                        <div class="col-12 fw-bold mx-5">
-                            <h1 id="category">Catégories</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3 my-3">
-                    <div class="card">
-                        <img src="./public/assets/img/graines.jpg" class="card-img-top" alt="Graines">
-                        <div class="card-body">
-                            <div class="btn-group">
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Graines
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <!-- Cards in dropdown buttons-->
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <p>Article 1</p>
-                                            <img src="./public/assets/img/graines1.jpg" class="card-img-top"
-                                                alt="graines de tournesol">
-                                        </a>
-                                        <div class="card" style="width: 10rem">
-                                            <div class="card-body">
-                                                <p class="card-text"></p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <p>Article 2</p>
-                                            <img src="./public/assets/img/graines2.jpg" class="card-img-top"
-                                                alt="graines brunes et blanches dans un bol en céramique brune">
-                                        </a>
-                                        <div class="card" style="width: 10rem">
-                                            <div class="card-body">
-                                                <p class="card-text"></p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <p>Article 3</p>
-                                            <img src="./public/assets/img/graines3.jpg" class="card-img-top"
-                                                alt="graines de lin">
-                                        </a>
-                                        <div class="card" style="width: 10rem">
-                                            <div class="card-body">
-                                                <p class="card-text"></p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+        <div class="container-fluid category-bg">
+            <div class="container text-center d-flex flex-wrap justify-content-around align-items-center img-fluid p-6">
+                <div class="row">
+                    <div class="container pb-4 d-flex justify-content-center">
+                        <div class="row justify-content-center">
+                            <div class="col-12 fw-bold mx-5">
+                                <h1 id="category">Catégories</h1>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-3 my-3">
-                    <div class="card">
-                        <img src="./public/assets/img/Plantes.jpg" class="card-img-top" alt="Plantes">
-                        <div class="card-body">
-                            <div class="btn-group">
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Plantes
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <!-- Cards in dropdown buttons-->
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <p>Article 1</p>
-                                            <img src="./public/assets/img/plant1.jpg" class="card-img-top" alt="Fleur d'oranger">
-                                        </a>
-                                        <div class="card" style="width: 10rem">
-                                            <div class="card-body">
-                                                <p class="card-text"></p>
+                    <div class="col-12 col-lg-3 my-3">
+                        <div class="card">
+                            <img src="./public/assets/img/graines.jpg" class="card-img-top" alt="Graines">
+                            <div class="card-body">
+                                <div class="btn-group">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Graines
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <!-- Cards in dropdown buttons-->
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <p>Article 1</p>
+                                                <img src="./public/assets/img/graines1.jpg" class="card-img-top"
+                                                    alt="graines de tournesol">
+                                            </a>
+                                            <div class="card" style="width: 10rem">
+                                                <div class="card-body">
+                                                    <p class="card-text"></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <p>Article 2</p>
-                                            <img src="./public/assets/img/plant2.jpg" class="card-img-top" alt="Magnolia blanc">
-                                        </a>
-                                        <div class="card" style="width: 10rem">
-                                            <div class="card-body">
-                                                <p class="card-text"></p>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <p>Article 2</p>
+                                                <img src="./public/assets/img/graines2.jpg" class="card-img-top"
+                                                    alt="graines brunes et blanches dans un bol en céramique brune">
+                                            </a>
+                                            <div class="card" style="width: 10rem">
+                                                <div class="card-body">
+                                                    <p class="card-text"></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <p>Article 3</p>
-                                            <img src="./public/assets/img/plant3.jpg" class="card-img-top" alt="Fleurs blanches">
-                                        </a>
-                                        <div class="card" style="width: 10rem">
-                                            <div class="card-body">
-                                                <p class="card-text"></p>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <p>Article 3</p>
+                                                <img src="./public/assets/img/graines3.jpg" class="card-img-top"
+                                                    alt="graines de lin">
+                                            </a>
+                                            <div class="card" style="width: 10rem">
+                                                <div class="card-body">
+                                                    <p class="card-text"></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-3 my-3">
-                    <div class="card">
-                        <img src="./public/assets/img/Arbres.jpg" class="card-img-top" alt="Arbres">
-                        <div class="card-body">
-                            <div class="btn-group">
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Arbres
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <!-- Cards in dropdown buttons-->
-                                    <li>
-                                        <a class="dropdown-item" href="./product.html">
-                                            <p>Article 1</p>
-                                            <img src="./public/assets/img/prunier.jpg" class="card-img-top" alt="Prunier Mirabelle de Nancy">
-                                        </a>
-                                        <div class="card" style="width: 10rem">
-                                            <div class="card-body">
-                                                <p class="card-text"></p>
+                    <div class="col-12 col-lg-3 my-3">
+                        <div class="card">
+                            <img src="./public/assets/img/Plantes.jpg" class="card-img-top" alt="Plantes">
+                            <div class="card-body">
+                                <div class="btn-group">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Plantes
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <!-- Cards in dropdown buttons-->
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <p>Article 1</p>
+                                                <img src="./public/assets/img/plant1.jpg" class="card-img-top" alt="Fleur d'oranger">
+                                            </a>
+                                            <div class="card" style="width: 10rem">
+                                                <div class="card-body">
+                                                    <p class="card-text"></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <p>Article 2</p>
-                                            <img src="./public/assets/img/tree1.jpg" class="card-img-top" alt="Pommier">
-                                        </a>
-                                        <div class="card" style="width: 10rem">
-                                            <div class="card-body">
-                                                <p class="card-text"></p>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <p>Article 2</p>
+                                                <img src="./public/assets/img/plant2.jpg" class="card-img-top" alt="Magnolia blanc">
+                                            </a>
+                                            <div class="card" style="width: 10rem">
+                                                <div class="card-body">
+                                                    <p class="card-text"></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <p>Article 3</p>
-                                            <img src="./public/assets/img/tree2.jpg" class="card-img-top" alt="Bambou">
-                                        </a>
-                                        <div class="card" style="width: 10rem">
-                                            <div class="card-body">
-                                                <p class="card-text"></p>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <p>Article 3</p>
+                                                <img src="./public/assets/img/plant3.jpg" class="card-img-top" alt="Fleurs blanches">
+                                            </a>
+                                            <div class="card" style="width: 10rem">
+                                                <div class="card-body">
+                                                    <p class="card-text"></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-3 my-3">
-                    <div class="card">
-                        <img src="./public/assets/img/Arbustes.jpg" class="card-img-top" alt="Arbustes">
-                        <div class="card-body">
-                            <div class="btn-group">
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Arbustes
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <!-- Cards in dropdown buttons-->
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <p>Article 1</p>
-                                            <img src="./public/assets/img/bush1.jpg" class="card-img-top" alt="Bonzai">
-                                        </a>
-                                        <div class="card" style="width: 10rem">
-                                            <div class="card-body">
-                                                <p class="card-text"></p>
+                    <div class="col-12 col-lg-3 my-3">
+                        <div class="card">
+                            <img src="./public/assets/img/Arbres.jpg" class="card-img-top" alt="Arbres">
+                            <div class="card-body">
+                                <div class="btn-group">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Arbres
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <!-- Cards in dropdown buttons-->
+                                        <li>
+                                            <a class="dropdown-item" href="./product.html">
+                                                <p>Article 1</p>
+                                                <img src="./public/assets/img/prunier.png" class="card-img-top" alt="Prunier Mirabelle de Nancy">
+                                            </a>
+                                            <div class="card" style="width: 10rem">
+                                                <div class="card-body">
+                                                    <p class="card-text"></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <p>Article 2</p>
-                                            <img src="./public/assets/img/bush2.jpg" class="card-img-top" alt="Arbuste de jardin">
-                                        </a>
-                                        <div class="card" style="width: 10rem">
-                                            <div class="card-body">
-                                                <p class="card-text"></p>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <p>Article 2</p>
+                                                <img src="./public/assets/img/tree1.jpg" class="card-img-top" alt="Pommier">
+                                            </a>
+                                            <div class="card" style="width: 10rem">
+                                                <div class="card-body">
+                                                    <p class="card-text"></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <p>Article 3</p>
-                                            <img src="./public/assets/img/bush3.jpg" class="card-img-top" alt="Buisson">
-                                        </a>
-                                        <div class="card" style="width: 10rem">
-                                            <div class="card-body">
-                                                <p class="card-text"></p>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <p>Article 3</p>
+                                                <img src="./public/assets/img/tree2.jpg" class="card-img-top" alt="Bambou">
+                                            </a>
+                                            <div class="card" style="width: 10rem">
+                                                <div class="card-body">
+                                                    <p class="card-text"></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 my-3">
+                        <div class="card">
+                            <img src="./public/assets/img/Arbustes.jpg" class="card-img-top" alt="Arbustes">
+                            <div class="card-body">
+                                <div class="btn-group">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Arbustes
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <!-- Cards in dropdown buttons-->
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <p>Article 1</p>
+                                                <img src="./public/assets/img/bush1.jpg" class="card-img-top" alt="Bonzai">
+                                            </a>
+                                            <div class="card" style="width: 10rem">
+                                                <div class="card-body">
+                                                    <p class="card-text"></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <p>Article 2</p>
+                                                <img src="./public/assets/img/bush2.jpg" class="card-img-top" alt="Arbuste de jardin">
+                                            </a>
+                                            <div class="card" style="width: 10rem">
+                                                <div class="card-body">
+                                                    <p class="card-text"></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <p>Article 3</p>
+                                                <img src="./public/assets/img/bush3.jpg" class="card-img-top" alt="Buisson">
+                                            </a>
+                                            <div class="card" style="width: 10rem">
+                                                <div class="card-body">
+                                                    <p class="card-text"></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -283,28 +290,33 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container-fluid footer-bg mt-6 order-1">
-            <div class="row mx-2 justify-content-around">
-                <div class="col-12 col-lg-4 text-center text-md-start p-4">
-                    <p>LaManuÉcologie</p>
-                    <p>238 Earls Ct Rd, Londres SW5 9AA</p>
-                    <p>+44 20 7123 4567</p>
-                    <p>contact@lamanuecology.com</p>
+        <div class="container-fluid bg_orange mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <p class="text-light mt-3 mb-0 text-center text-lg-start">LaManuÉcologie</p>
+                        <p class="text-light mb-0 text-center text-lg-start">238 Earls Ct Rd, Londres SW5 9AA</p>
+                        <p class="text-light mb-0 text-center text-lg-start">+44 20 7123 4567</p>
+                        <p class="text-light text-center text-lg-start">contact@lamanuecology.com</p>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <img src="./public/assets/img/icon_ig.png" height="30" class="m-2" alt="Logo Instagram">
+                        <img src="./public/assets/img/icon_twitter.png" height="30" class="m-2" alt="Logo Twitter / X">
+                        <img src="./public/assets/img/icon_fb.png" height="30" class="m-2" alt="Logo Facebook">
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <p class="mt-3 mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">À propos</a></p>
+                        <p class="mb-0 text-center text-lg-end"> <a class="text-decoration-none
+                            text-light" href="">F.A.Q & Contact</a></p>
+                        <p class="mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">Mentions Légales</a></p>
+                        <p class="mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">CGU</a></p>
+                    </div>
                 </div>
-                <div
-                    class="col-12 col-lg-4 text-center order-3 order-lg-2 d-flex flex-wrap align-content-around justify-content-evenly">
-                    <a href="#"><img src="./public/assets/img/instagram.png" alt="Lien vers Instagram"></a>
-                    <a href="#"><img src="./public/assets/img/twitter.png" alt="Lien vers X"></a>
-                    <a href="#"><img src="./public/assets/img/facebook.png" alt="Lien vers Facebook"></a>
-                </div>
-                <div class="col-12 col-lg-4 text-center text-md-end text-end p-4 order-2 order-lg-3">
-                    <p>À propos</p>
-                    <p>FAQ & Contact</p>
-                    <p>Mentions Légales</p>
-                    <p>CGU</p>
-                </div>
-                <div class="col-12 text-center p-4 order-4">
-                    <p>Copyright Greeny 2024</p>
+                <div class="row">
+                    <p class="col-12 text-center text-light">Copyright Greeny 2024</p>
                 </div>
             </div>
         </div>

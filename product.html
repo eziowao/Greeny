@@ -10,70 +10,174 @@
 </head>
 
 <body>
-    <header>
+    <!-- NAVBAR -->
+    <header class="my-5">
+
         <!-- MOBILE -->
-        <nav class="mobile-f">
-            <i class="fa-solid fa-bars burger-icon" onclick="navbarEffect.transformBurgerIcon()"></i>
-            <a href="#"><img src="public/assets/img/brand-icon.png" alt="Logo" /></a>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <ul class="nav-items hide">
-                <li><a class="active" href="">Accueil</a></li>
-                <li><a href="">Evenement</a></li>
-                <li><a href="">Echange</a></li>
-                <li><a href="">A propos</a></li>
+        <nav class="d-md-none d-flex justify-content-between align-content-center align-items-center w-100 px-3">
+            <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
+            <i class="fa-solid fa-xmark cross-icon text-light hide" onclick="navbarEffect.run()"></i>
+            <img src="public/assets/img/brand-icon.png" alt="">
+            <i class="fa-solid fs-2 fa-magnifying-glass"></i>
+            <ul class="position-absolute ff-primary fs-4 menu hide-menu">
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Évènements</a></li>
+                <li><a href="">Échanges</a></li>
+                <li><a href="">À propos</a></li>
                 <li><a href="">FAQ</a></li>
             </ul>
         </nav>
 
         <!-- UP TO MOBILE LANDSCAPE -->
-        <nav class="desktop-f">
-            <a href="#"><img src="public/assets/img/brand-icon.png" alt="Logo" /></a>
-            <div>
-                <ul class="nav-items-desktop">
-                    <li><a class="active" href="">Accueil</a></li>
-                    <li><a href="">Evenement</a></li>
-                    <li><a href="">Echange</a></li>
-                    <li><a href="">A propos</a></li>
-                    <li><a href="">FAQ</a></li>
+        <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
+            <img src="public/assets/img/brand-icon.png" alt="">
+            <div class="w-75 d-flex flex-wrap justify-content-end align-content-between me-4">
+                <ul class="w-100 text-end ff-primary">
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">Accueil</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">Évènements</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">Échanges</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">À propos</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text-color" href="">FAQ</a></li>
                 </ul>
-                <div>
-                    <input class="input-group rounded" type="search" />
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="w-75">
+                    <input class="input-group rounded" type="search">
+                    <i class="fa-solid position-absolute fa-magnifying-glass"></i>
                 </div>
             </div>
         </nav>
-    </header>
-    <main>
 
+
+    </header>
+
+    <main>
+        <!-- FORMAT MOBILE -->
+
+        <div class="container-fluid d-md-none">
+            <div class="row">
+                <div class="container-fluid text-center mt-6 bgH1 p-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="m-0">MIRABELLE DE NANCY</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid text-center">
+                    <div class="row">
+                        <div class="col-12 product-bg p-6 itemDescription">
+                            <p>Bonjour à tous les amoureux de jardinage et de délicieux fruits!
+                                Je propose à la vente un superbe prunier de la variété Mirabelle de Nancy, réputée pour la
+                                qualité exceptionnelle de ses fruits. Ce prunier est un véritable joyau pour tout jardin,
+                                offrant à la fois beauté et abondance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid text-center position-relative">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="./public/assets/img/pp1.png" alt="photo de profil" class="pp p-5">
+                        </div>
+                        <div class="p-4">
+                            <a class="btn btn-primary button-contact" href="#" role="button">ME CONTACTER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- < DESKTOP -->
+
+        <div class="container d-none d-md-flex justify-content-center">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container text-center position-relative">
+                        <div class="row">
+                            <!-- ITEM DESCRIPTION -->
+                            <div class="col-12 p-5">
+                                <h2>Prunier Mirabelle de Nancy <span><em>- Amiens</em></span></h2>
+                            </div>
+                            <div class="col-6">
+                                <p>Bonjour à tous les amoureux de jardinage et de délicieux fruits!
+                                    Je propose à la vente un superbe prunier de la variété Mirabelle de Nancy, réputée
+                                    pour la qualité exceptionnelle de ses fruits. Ce prunier est un véritable joyau pour
+                                    tout jardin, offrant à la fois beauté et abondance.</p>
+                                <p class="text-start">🌿 Caractéristiques du Prunier :</p>
+                                <ul>• Variété : Mirabelle de Nancy, connue pour son goût sucré et sa chair juteuse.</ul>
+                                <ul>• Âge : Mûr et prêt à être transplanté dans votre jardin.</ul>
+                                <ul>• Condition : En excellente santé, bien entretenue et taillée régulièrement pour une
+                                    croissance optimale.</ul>
+                                <ul>• Taille : Idéale pour les petits jardins ou les espaces restreints</ul>
+                                <p class="text-start">🍑 Avantages :</p>
+                                <ul>Récolte Abondante : Profitez d'une abondance de mirabelles juteuses chaque année.
+                                </ul>
+                                <ul>Facile d'Entretien : Peu exigeant en soins, ce prunier est parfait pour les
+                                    jardiniers débutants ou expérimentés.</ul>
+                                <ul>Beauté Ornementale : En plus de ses fruits délicieux, ce prunier ajoute une touche
+                                    de charme à votre jardin avec ses fleurs printanières et son feuillage luxuriant.
+                                </ul>
+                                <p class="text-start">🏡 Utilisations :</p>
+                                <ul>Fraîches : Dégustez les mirabelles fraîches directement de l'arbre pour une
+                                    expérience gustative incomparable.</ul>
+                                <ul>Confitures et Confit : Transformez ces délicieux fruits en confitures, confits ou
+                                    compotes pour régaler votre famille et vos amis tout au long de l'année.</ul>
+                                <p>Ne manquez pas cette occasion d'ajouter un peu de magie à votre jardin avec ce
+                                    superbe prunier Mirabelle de Nancy. Contactez-moi dès maintenant pour plus
+                                    d'informations ou pour planifier une visite pour voir cet arbre magnifique de vos
+                                    propres yeux!</p>
+                                <p>Merci et au plaisir de vous aider à réaliser votre projet jardinage!</p>
+                            </div>
+                            <!-- ITEM PHOTO AND USER NAME / CITY -->
+                            <div class="col-6">
+                                <img src="./public/assets/img/prunier.png" alt="Prunier mirabelle de Nancy" class="itemPhoto">
+                                <img src="" alt="" class="">
+                            </div>
+                            <div class="col-12 p-5">
+                                <a class="btn btn-primary button-contact" href="#" role="button">Contactez {name}</a>
+                            </div>
+                            <div">
+                            <!-- profil utilisateur ici -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <div class="container-fluid footer-bg mt-6 order-1">
-            <div class="row mx-2 justify-content-around">
-                <div class="col-12 col-lg-4 text-center text-md-start p-4">
-                    <p>LaManuÉcologie</p>
-                    <p>238 Earls Ct Rd, Londres SW5 9AA</p>
-                    <p>+44 20 7123 4567</p>
-                    <p>contact@lamanuecology.com</p>
+        <div class="container-fluid bg_orange mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <p class="text-light mt-3 mb-0 text-center text-lg-start">LaManuÉcologie</p>
+                        <p class="text-light mb-0 text-center text-lg-start">238 Earls Ct Rd, Londres SW5 9AA</p>
+                        <p class="text-light mb-0 text-center text-lg-start">+44 20 7123 4567</p>
+                        <p class="text-light text-center text-lg-start">contact@lamanuecology.com</p>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <img src="./public/assets/img/icon_ig.png" height="30" class="m-2" alt="Logo Instagram">
+                        <img src="./public/assets/img/icon_twitter.png" height="30" class="m-2" alt="Logo Twitter / X">
+                        <img src="./public/assets/img/icon_fb.png" height="30" class="m-2" alt="Logo Facebook">
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <p class="mt-3 mb-0 text-center text-lg-end"><a class="text-decoration-none
+                                text-light" href="">À propos</a></p>
+                        <p class="mb-0 text-center text-lg-end"> <a class="text-decoration-none
+                                text-light" href="">F.A.Q & Contact</a></p>
+                        <p class="mb-0 text-center text-lg-end"><a class="text-decoration-none
+                                text-light" href="">Mentions Légales</a></p>
+                        <p class="mb-0 text-center text-lg-end"><a class="text-decoration-none
+                                text-light" href="">CGU</a></p>
+                    </div>
                 </div>
-                <div
-                    class="col-12 col-lg-4 text-center order-3 order-lg-2 d-flex flex-wrap align-content-around justify-content-evenly">
-                    <a href="#"><img src="./public/assets/img/instagram.png" alt="Lien vers Instagram"/></a>
-                    <a href="#"><img src="./public/assets/img/twitter.png" alt="Lien vers X"/></a>
-                    <a href="#"><img src="./public/assets/img/facebook.png" alt="Lien vers Facebook"/></a>
-                </div>
-                <div class="col-12 col-lg-4 text-center text-md-end text-end p-4 order-2 order-lg-3">
-                    <p>À propos</p>
-                    <p>FAQ & Contact</p>
-                    <p>Mentions Légales</p>
-                    <p>CGU</p>
-                </div>
-                <div class="col-12 text-center p-4 order-4">
-                    <p>Copyright Greeny 2024</p>
+                <div class="row">
+                    <p class="col-12 text-center text-light">Copyright Greeny 2024</p>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Script -->
     <script src="./lib/bootstrap.bundle.js"></script>
     <script src="https://kit.fontawesome.com/afc6a54030.js" crossorigin="anonymous"></script>
     <script src="./public/assets/js/index.js"></script>

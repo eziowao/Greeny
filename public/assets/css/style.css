@@ -1,232 +1,130 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-.desktop-f {
-    display: none;
+
+/* NAVBAR */
+nav img {
+    width: 120px !important;
+    height: 120px !important;
 }
 
-/* Navbar de Fred */
-.mobile-f {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
+nav ul {
+    animation: bubbleEffectOnBurgerClick 2s forwards;
+    border-radius: 50%;
+    text-align: center;
+    width: 65%;
+}
+
+nav ul li {
+    list-style: none;
     margin-top: 1.2em;
 }
 
-.mobile-f i {
-    color: #484b25;
-    font-size: x-large;
-    margin: 0.8em;
-    z-index: 999;
-}
-
-.mobile-f i:hover {
-    cursor: pointer;
-}
-
-.mobile-f ul {
-    position: absolute;
-    text-align: center;
-    height: 55vh;
-    padding: 0;
-    top: 0%;
-    background-color: #d4863c;
-    width: 90%;
-    max-width: 400px;
-    min-width: 250px;
-    border-radius: 0 30% 40% 30%;
-    z-index: 999;
-}
-
-.mobile-f ul li {
-    list-style: none;
-    width: 100%;
-    font-size: large;
-    margin: 0.5em;
-}
-
-.mobile-f ul li a {
-    font-family: "Montserrat";
-    font-weight: bold;
+nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-.mobile-f .hide {
+.hide {
+    display: none !important;
+}
+
+.hide-menu {
     display: none;
-    animation: hideNav 2s;
 }
 
-.mobile-f .show {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    animation: burgerToX 1s;
+.show-menu {
+    display: block;
 }
 
-.mobile-f .active::before {
-    content: "";
+i {
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0.5em;
 }
 
-.mobile-f .fa-xmark {
-    animation: moveXmark 3s;
+
+@keyframes bubbleEffectOnBurgerClick {
+    from {
+        padding: 0;
+        width: 60%;
+        background-color: white;
+        top: -12%;
+        left: -40%;
+    }
+
+    to {
+        padding: 9em 5em 5em 7em;
+        top: -9%;
+        left: -29%;
+        width: 120%;
+        background-color: #d4863c;
+    }
+}
+
+/* / CROIX FERMETURE MENU MOBILE / */
+.fa-xmark {
     color: white;
     font-size: xx-large;
     z-index: 9999;
+    overflow: hidden;
+    position: absolute;
 }
 
-.mobile-f .hero-container {
-    margin-top: 2em;
-}
-
-@keyframes moveXmark {
-    0% {
-        color: rgba(255, 255, 255, 0);
+/* / EFFET POR LES ECRANS DE PLUS DE 768px / */
+@media (width > 768px) {
+    nav ul {
+        animation: none;
+        color: #596A40 !important;
     }
 
-    100% {
-        color: white !important;
-    }
-}
-
-@keyframes burgerToX {
-    0% {
-        top: -20%;
-        left: -20%;
-    }
-
-    100% {
-        top: 0%;
-        left: 0;
-    }
-}
-
-@keyframes xToBurger {
-    0% {
-        top: 0;
-        left: 0;
-    }
-
-    100% {
-        top: -20%;
-        left: -20%;
-    }
-}
-
-@keyframes hideNav {}
-
-@media (width > 700px) {
-    .mobile-f {
-        display: none;
+    a {
+        text-decoration: none;
     }
 
     header {
-        display: flex;
-        align-content: center;
-        height: 20vh;
+        margin: 1em 1em 5em 1em;
     }
 
-    .desktop-f {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-        margin: 1.5em 1em;
+    header nav img {
+        width: 140px;
+        height: 140px;
     }
 
-    .desktop-f img {
-        max-width: 120px;
-        height: 120px;
-        margin: 2em 1.8 0 2em;
-    }
-
-    .desktop-f div {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        justify-content: end;
-        width: 80%;
-        margin-right: 5em;
-    }
-
-    .desktop-f div ul {
-        font-size: large;
-        width: 100%;
-        display: inline-block;
-        background-color: inherit;
-        margin: 0;
-        padding: 0;
-        text-align: end;
-    }
-
-    .desktop-f div ul li {
-        display: inline;
-        margin: 1.5em;
-    }
-
-    .desktop-f div ul li a {
-        color: #484b25;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .desktop-f div div {
-        width: 50%;
+    header nav div div {
         position: relative;
         display: flex;
         align-items: center;
-        justify-content: start;
-        margin-bottom: 3em;
-        margin-left: 5em;
+        max-width: 600px;
     }
 
-    .desktop-f div div input {
+    header nav div div input {
         padding-left: 2em;
-        overflow: hidden;
-        outline: none;
     }
 
-    .desktop-f div div i {
+    header nav div div i {
         position: absolute;
         font-size: large;
-        color: #484b25;
+        color: #596A40 !important;
         border-radius: 5px;
         padding-left: 0.5em;
+        cursor: pointer;
+    }
+
+    .text-color {
+        color: #596A40;
     }
 }
 
-@media (width < 1050px) {
-    .desktop-f {
-        flex-wrap: nowrap;
-        align-content: center;
-    }
-
-    .desktop-f img {
-        margin: 0.5em;
-    }
-
-    .desktop-f div {
-        flex-wrap: wrap;
-    }
-
-    .desktop-f div ul li {
-        margin: 0.5em;
-    }
-
-    .desktop-f div div {
-        width: 60%;
-        margin-right: 0;
-    }
-}
+/*# sourceMappingURL=style.css.map */
 
 header nav img {
     height: 15vh;
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* -----------PAGE PRODUCTS----------- */
 
 /* Body */
 
@@ -300,6 +198,67 @@ footer p {
     margin: 0;
 }
 
-.footer-bg {
+.bg_orange {
     background-color: #D4863C;
 }
+
+
+/* -----------PAGE PRODUCT----------- */
+
+.bgH1 {
+    background-image: url(../img/prunier.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+main div h1 {
+    font-family: "Lato", sans-serif;
+    color: #FFFFFF;
+    background-color: #0000007a;
+}
+
+.product-bg {
+    background-color: #93A25A;
+    
+}
+
+.itemDescription {
+    font-family: "Lato", sans-serif;
+    color: #FFFFFF;
+}
+
+.pp {
+    border-radius: 100%;
+}
+
+.button-contact {
+    background-color: #93A25A;
+    font-family: "Lato", sans-serif;
+    height: 2.5em;
+    width: 12em;
+    border: solid #93A25A;
+}
+
+.button-contact:hover {
+    background-color: #FFFFFF;
+    color: #93A25A;
+    border: solid #93A25A;
+}
+
+main div h2 {
+    color: #596A40;
+    font-family: "Montserrat";
+    font-size: 1.8rem;
+}
+
+.text {
+    position: absolute;
+    top: 65%; /* Positionner le texte au centre vertical */
+    left: 79%; /* Positionner le texte au centre horizontal */
+    transform: translate(-50%, -50%); /* Centrer le texte par rapport à son conteneur */
+  }
+
+  .itemPhoto {
+    width: 90%;
+  }
