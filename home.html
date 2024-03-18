@@ -16,10 +16,10 @@
         <!-- MOBILE -->
         <nav class="d-md-none d-flex justify-content-between align-content-center align-items-center w-100 px-3">
             <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
-            <i class="fa-solid fa-xmark cross-icon text-light hide" onclick="navbarEffect.run()"></i>
-            <img src="public/assets/img/brandIcon.png" alt="">
+            <i class="fa-solid fa-xmark cross-icon text-light hide fs-2" onclick="navbarEffect.run()"></i>
+            <img src="public/assets/img/brandIcon.png" alt="image de la marque">
             <i class="fa-solid fs-2 fa-magnifying-glass"></i>
-            <ul class="position-absolute ff-primary fs-4 menu hide-menu">
+            <ul class="position-absolute fs-4 menu hide-menu">
                 <li><a href="">Accueil</a></li>
                 <li><a href="">Évènements</a></li>
                 <li><a href="">Échanges</a></li>
@@ -30,32 +30,33 @@
 
         <!-- UP TO MOBILE LANDSCAPE -->
         <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
-            <img src="public/assets/img/brandIcon.png" alt="">
+            <img src="public/assets/img/brandIcon.png" alt="image de la marque">
             <div class="w-75 d-flex flex-wrap justify-content-end align-content-between me-4">
-                <ul class="w-100 text-end ff-primary">
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">Accueil</a></li>
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">Évènements</a></li>
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">Échanges</a></li>
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">À propos</a></li>
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 fc-third" href="">FAQ</a></li>
+                <ul class="w-100 text-end">
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen" href="">Accueil</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen" href="">Évènements</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen" href="">Échanges</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen" href="">À propos</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen" href="">FAQ</a></li>
                 </ul>
-                <div class="w-75">
-                    <input class="input-group rounded" type="search">
-                    <i class="fa-solid position-absolute fa-magnifying-glass"></i>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div style="width: 100%;">
+                        <input class="input-group rounded" type="search">
+                        <i class="fa-solid position-absolute fa-magnifying-glass"></i>
+                    </div>
                 </div>
             </div>
         </nav>
 
-        
     </header>
    
     <section class="hero-container d-flex justify-content-center align-content-center align-items-center mt-5 mb-5">
-        <p class="ff-primary fs-4 fc-third fw-bolder d-md-inline d-none d-xs-none my-md-0 ml-md-4">
+        <p class="fs-4 fc-third fw-bolder d-md-inline d-none d-xs-none my-md-0 ml-md-4">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quo, dicta magni 
             impedit accusamus fuga et? Adipisci?
         </p>
-        <img src="public/assets/img/heroImage1.png" class='d-none d-md-block'>
-        <img src="public/assets/img/heroImage2.png" class="d-md-none w-100">
+        <img src="public/assets/img/heroImage1.png" class='d-none d-md-block' alt="image page principale jeune pousses">
+        <img src="public/assets/img/heroImage2.png" class="d-md-none w-100" alt="image page principale jeunes pousses">
         <!-- <p class="fs-5 d-md-none my-md-0 ml-md-4 bg-fourth text-light fw-6 text-center p-3 my-5 position-absolute w-75">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quo, dicta magni impedit sint maiores illum temporibus ipsam.
         </p> -->
@@ -69,24 +70,24 @@
             </p>
             <div class="row mx-auto text-center outer-circle">
                 <div class="col-12 col-md-4 my-5">
-                    <img class="w-50 border-rounded bg-primary p-2" src="public/assets/img/category1.png" alt="">
+                    <img class="w-50 border-rounded bg_lightgreen p-2" src="public/assets/img/category1.png" alt="image graine">
                     <p class="mt-4 fw-bold fc-third text-around-image">Graines</p>
                 </div>
                 <div class="col-12 col-md-4 my-5">
-                    <img class="w-50 border-rounded bg-secondary p-2" src="public/assets/img/category2.png" alt="">
+                    <img class="w-50 border-rounded bg_orange p-2" src="public/assets/img/category2.png" alt="image arbre">
                     <p class="mt-4 fw-bold fc-third">Boûtures</p>
                 </div>
                 <div class="col-12 col-md-4 my-5">
-                    <img class="w-50 border-rounded bg-fourth p-2" src="public/assets/img/category3.png" alt="">
+                    <img class="w-50 border-rounded bg_lightgreen p-2" src="public/assets/img/category3.png" alt="image bouture">
                     <p class="mt-4 fw-bold fc-third">Arbres / Arbustes</p>
                 </div>
             </div>
         </div>
     </section>
         
-    <section class="container-fluid container-events my-5 bg-fourth py-5">
-        <h2 class="text-center text-light fw-bold ff-primary">NOS EVENEMENTS</h2>
-        <!-- <div id="carouselExampleInterval" class="carousel w-100 w-sm-75 mx-auto slide d-sm-none" data-bs-ride="carousel">
+    <section class="container-fluid container-events my-5 bg_lightgreen py-5 text-center">
+        <h2 class="text-center text-light fw-bold">NOS EVENEMENTS</h2>
+        <div id="carouselExampleInterval" class="carousel w-100 w-sm-75 mx-auto slide d-sm-none" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
                     <img src="public/assets/img/calend1.png" class="d-block w-100" alt="...">
@@ -111,23 +112,23 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4">
-                        <img src="public/assets/img/calend1.png" class="d-block w-100" alt="...">
+                        <img src="public/assets/img/calend1.png" alt="...">
                     </div>
                     <div class="col-4">
-                        <img src="public/assets/img/calend2.png" class="d-block w-100" alt="...">
+                        <img src="public/assets/img/calend2.png" alt="...">
                     </div>
                     <div class="col-4">
-                        <img src="public/assets/img/calend3.png" class="d-block w-100" alt="...">
+                        <img src="public/assets/img/calend3.png" alt="...">
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </section>
 
     <section class="container container-temoignage py-5 text-center">
-        <h2 class="ff-primary fw-bold text-center">TEMOIGNAGES</h2>
+        <h2 class="fw-bold text-center mb-5">TEMOIGNAGES</h2>
         <!-- SLIDER FOR MOBILE -->
-        <div class="temoignage-card col-md-4 d-md-none">
+        <div class="temoignage-card col-md-4 d-md-none my-5">
             <img class="my-4" src="public/assets/img/image 12.png" alt="photos_profils_temoignages">
             <div>
                 <p class="my-5 blub mx-auto">
@@ -166,7 +167,31 @@
     </section>
 
     <footer>
-
+        <div class="container-fluid footer-bg mt-6 order-1">
+            <div class="row mx-2 justify-content-around">
+                <div class="col-12 col-lg-4 text-center text-md-start p-4">
+                    <p>LaManuÉcologie</p>
+                    <p>238 Earls Ct Rd, Londres SW5 9AA</p>
+                    <p>+44 20 7123 4567</p>
+                    <p>contact@lamanuecology.com</p>
+                </div>
+                <div
+                    class="col-12 my-5 col-lg-4 text-center order-3 order-lg-2 d-flex flex-wrap align-content-around justify-content-evenly">
+                    <a href="#"><img src="./public/assets/img/instagram.png" alt="Lien vers Instagram"/></a>
+                    <a href="#"><img src="./public/assets/img/twitter.png" alt="Lien vers X"/></a>
+                    <a href="#"><img src="./public/assets/img/facebook.png" alt="Lien vers Facebook"/></a>
+                </div>
+                <div class="col-12 col-lg-4 text-center text-md-end text-end p-4 order-2 order-lg-3 my-5">
+                    <p>À propos</p>
+                    <p>FAQ & Contact</p>
+                    <p>Mentions Légales</p>
+                    <p>CGU</p>
+                </div>
+                <div class="col-12 text-center p-4 order-4">
+                    <p>Copyright Greeny 2024</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="public/assets/js/index.js"></script>
