@@ -6,146 +6,156 @@ h2,
 h3,
 h4,
 li {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 * {
-    font-family: "lato";
+  font-family: "lato";
 }
 
 .groupeImage {
-    border-radius: 24px;
-    width: 100%;
+  border-radius: 24px;
+  width: 100%;
 }
 
 .text-justify {
-    text-align: justify;
+  text-align: justify;
 }
 
 .text-green {
-    color: #596A40;
+  color: #596A40;
 }
 
 .h2-green {
-    color: #484b25;
+  color: #484b25;
 }
-:root{
-    font-size: 18px;
+
+.bg_orange {
+  background-color: #D4863C;
 }
+
+:root {
+  font-size: 18px;
+}
+
+.fs22 {
+  font-size: 22px;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 
 }
 
 /* NAVBAR */
 nav img {
-    width: 120px !important;
-    height: 120px !important;
+  width: 120px !important;
+  height: 120px !important;
 }
 
 nav ul {
-    animation: bubbleEffectOnBurgerClick 2s forwards;
-    border-radius: 50%;
-    text-align: center;
-    width: 65%;
+  animation: bubbleEffectOnBurgerClick 2s forwards;
+  border-radius: 50%;
+  text-align: center;
+  width: 65%;
 }
 
 nav ul li {
-    list-style: none;
-    margin-top: 1.2em;
+  list-style: none;
+  margin-top: 1.2em;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .hide {
-    display: none !important;
+  display: none !important;
 }
 
 .hide-menu {
-    display: none;
+  display: none;
 }
 
 .show-menu {
-    display: block;
+  display: block;
 }
 
 i {
-    cursor: pointer;
-    overflow: hidden;
-    padding: 0.5em;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0.5em;
 }
 
 /* EFFET DE LA BULLE */
 @keyframes bubbleEffectOnBurgerClick {
-    from {
-        padding: 0;
-        width: 60%;
-        background-color: white;
-        top: -12%;
-        left: -40%;
-    }
+  from {
+    padding: 0;
+    width: 60%;
+    background-color: white;
+    top: -12%;
+    left: -40%;
+  }
 
-    to {
-        padding: 9em 5em 5em 7em;
-        top: -9%;
-        left: -29%;
-        width: 120%;
-        background-color: #d4863c;
-    }
+  to {
+    padding: 9em 5em 5em 7em;
+    top: -9%;
+    left: -29%;
+    width: 120%;
+    background-color: #d4863c;
+  }
 }
 
 /* CROIX FERMETURE MENU MOBILE */
 .fa-xmark {
-    color: white;
-    font-size: xx-large;
-    z-index: 9999;
-    overflow: hidden;
-    position: absolute;
+  color: white;
+  font-size: xx-large;
+  z-index: 9999;
+  overflow: hidden;
+  position: absolute;
 }
 
 /* EFFET POR LES ECRANS DE PLUS DE 768px */
 @media (width > 768px) {
-    nav ul {
-        animation: none;
-    }
+  nav ul {
+    animation: none;
+  }
 
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 
-    header {
-        margin: 1em 1em 5em 1em;
-    }
+  header {
+    margin: 1em 1em 5em 1em;
+  }
 
-    header nav img {
-        width: 140px;
-        height: 140px;
-    }
+  header nav img {
+    width: 140px;
+    height: 140px;
+  }
 
-    header nav div div {
-        position: relative;
-        display: flex;
-        align-items: center;
-        max-width: 600px;
-    }
+  header nav div div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+  }
 
-    header nav div div input {
-        padding-left: 2em;
-    }
+  header nav div div input {
+    padding-left: 2em;
+  }
 
-    header nav div div i {
-        position: absolute;
-        font-size: large;
-        color: #596A40;
-        border-radius: 5px;
-        padding-left: 0.5em;
-        cursor: pointer;
-    }
+  header nav div div i {
+    position: absolute;
+    font-size: large;
+    color: #596A40;
+    border-radius: 5px;
+    padding-left: 0.5em;
+    cursor: pointer;
+  }
 
 }
 
@@ -153,23 +163,23 @@ i {
 /* FOOTER */
 
 footer {
-    font-family: "Lato", sans-serif;
-    color: #FFFFFF;
-    bottom: 0;
+  font-family: "Lato", sans-serif;
+  color: #FFFFFF;
+  bottom: 0;
 }
 
 .p-6 {
-    padding: 6rem !important;
+  padding: 6rem !important;
 }
 
 .mt-6 {
-    margin-top: 6rem !important;
+  margin-top: 6rem !important;
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
 }
 
 .footer-bg {
-    background-color: #D4863C;
+  background-color: #D4863C;
 }

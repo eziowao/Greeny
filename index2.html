@@ -13,52 +13,55 @@
 <body>
     <header class="my-5">
         <!-- NAVBAR -->
-            <!-- MOBILE -->
-        <nav class="d-md-none d-flex justify-content-between align-content-center align-items-center w-100 px-3">
-            <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
-            <i class="fa-solid fa-xmark cross-icon text-light hide" onclick="navbarEffect.run()"></i>
-            <img src="public/assets/img/Greeny.png" alt="le logo de Greeny">
-            <i class="fa-solid fs-2 fa-magnifying-glass"></i>
-            <ul class="position-absolute ff-primary fs-4 menu hide-menu">
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Évènements</a></li>
-                <li><a href="">Échanges</a></li>
-                <li><a href="">À propos</a></li>
-                <li><a href="">FAQ</a></li>
-            </ul>
-        </nav>
+        <!-- MOBILE -->
+        <div class="container">
+            <nav class="d-md-none d-flex justify-content-between align-content-center align-items-center w-100 px-3">
+                <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
+                <i class="fa-solid fa-xmark cross-icon text-light hide" onclick="navbarEffect.run()"></i>
+                <img src="public/assets/img/Greeny.png" alt="le logo de Greeny">
+                <i class="fa-solid fs-2 fa-magnifying-glass"></i>
+                <ul class="position-absolute ff-primary fs-4 menu hide-menu">
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Évènements</a></li>
+                    <li><a href="">Échanges</a></li>
+                    <li><a href="">À propos</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </nav>
 
             <!-- UP TO MOBILE LANDSCAPE -->
-        <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
-            <img src="public/assets/img/Greeny.png" alt="le logo de Greeny">
-            <div class="w-75 d-flex flex-wrap justify-content-end align-content-between me-4">
-                <ul class="w-100 text-end">
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 h2-green" href="">Accueil</a></li>
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 h2-green" href="">Évènements</a></li>
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 h2-green" href="">Échanges</a></li>
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 h2-green" href="">À propos</a></li>
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 h2-green" href="">FAQ</a></li>
-                </ul>
-                <div class="w-75">
-                    <input class="input-group rounded" type="search">
-                    <i class="fa-solid position-absolute fa-magnifying-glass"></i>
+            <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
+                <img src="public/assets/img/Greeny.png" alt="le logo de Greeny">
+                <div class="w-75 d-flex flex-wrap justify-content-end align-content-between me-4">
+                    <ul class="w-100 text-end">
+                        <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 h2-green" href="">Accueil</a></li>
+                        <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 h2-green" href="">Évènements</a></li>
+                        <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 h2-green" href="">Échanges</a></li>
+                        <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 h2-green" href="">À propos</a></li>
+                        <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 h2-green" href="">FAQ</a></li>
+                    </ul>
+                    <div class="w-75">
+                        <input class="input-group rounded" type="search">
+                        <i class="fa-solid position-absolute fa-magnifying-glass"></i>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+
+        </div>
         <!-- FIN NAVBAR -->
     </header>
-    
+
     <!-- CORP DE TEXTE -->
     <main>
         <article class="titre text-center my-5">
-            <h1 class="h2-green fw-bold"> À propos de nous </h1>
+            <h1 class="h2-green fw-bold fs-2"> À propos de nous </h1>
         </article>
         <!-- CONTENEUR 1 -->
         <div class="container my-5">
             <div class="row d-flex align-items-center">
                 <!-- BLOC TEXTE -->
                 <div class="col-12 col-md-6 order-2">
-                    <h2 class="h2-green mt-2 ">Qui sommes nous ?</h2>
+                    <h2 class="h2-green mt-2 fs22 fw-bold ">Qui sommes nous ?</h2>
                     <p class="text-justify text-green ">Le projet <span class="fst-italic fw-bold">Greeny</span> est né
                         de
                         l’association <span class="fst-italic fw-bold">LaManuEcology</span>, dévouée à la préservation
@@ -69,7 +72,7 @@
                         commun.
                     </p>
                 </div>
-                
+
                 <!-- BLOC IMAGE -->
                 <div class="col-12 col-md-6 order-1 my-1">
                     <img class="groupeImage"
@@ -77,7 +80,7 @@
                         alt="photo de notre équipe">
                 </div>
             </div>
-            
+
         </div>
         <!-- CONTENEUR 2 -->
         <div class="container my-5">
@@ -91,7 +94,7 @@
 
                 <!-- BLOC TEXTE -->
                 <div class="col-12 col-md-6 order-md-1">
-                    <h2 class="h2-green">Notre histoire</h2>
+                    <h2 class="h2-green fs22 fw-bold">Notre histoire</h2>
                     <p class="text-green text-justify">Notre association est née d’un groupe d'étudiants passionnés par
                         la
                         nature et la préservation de l'environnement. Il nous tenait à cœur de créer une entité
@@ -111,28 +114,29 @@
             <div class="row d-flex align-items-center">
                 <!-- BLOC TEXTE -->
                 <div class="col-12 col-md-6 order-2">
-                    <h2 class="h2-green ff-primary">Notre mission</h2>
-                    <p class="text-green text-justify">Nous organisons régulièrement des ventes de graines de fleurs,
-                    d'arbres et de plantes menacées. Ces événements offrent une occasion précieuse de vous
-                    sensibiliser aux espèces en danger et de collecter des fonds pour soutenir les efforts de
-                    conservation. De plus, en disséminant ces graines dans divers écosystèmes, l'association
-                    contribue à promouvoir la diversité génétique et à renforcer la résilience des populations
-                    végétales.
-                    <br><br>
+                    <h2 class="h2-green ff-primary fs22 fw-bold">Notre mission</h2>
+                    <p class="text-green text-justify">Nous organisons régulièrement des ventes de graines de
+                        fleurs,
+                        d'arbres et de plantes menacées. Ces événements offrent une occasion précieuse de vous
+                        sensibiliser aux espèces en danger et de collecter des fonds pour soutenir les efforts de
+                        conservation. De plus, en disséminant ces graines dans divers écosystèmes, l'association
+                        contribue à promouvoir la diversité génétique et à renforcer la résilience des populations
+                        végétales.
+                        <br><br>
 
-                    En diffusant les graines de plantes menacées dans différents écosystèmes, <span
-                        class="fst-italic fw-bold">LaManuEcology</span> joue un
-                    rôle crucial dans la promotion de la survie et de l'adaptation des espèces. Cette approche
-                    proactive permet aux plantes de s'acclimater à de nouveaux environnements, de s'adapter aux
-                    changements climatiques et de coloniser des habitats propices à leur croissance et à leur
-                    développement.
-                    <br><br>
+                        En diffusant les graines de plantes menacées dans différents écosystèmes, <span
+                            class="fst-italic fw-bold">LaManuEcology</span> joue un
+                        rôle crucial dans la promotion de la survie et de l'adaptation des espèces. Cette approche
+                        proactive permet aux plantes de s'acclimater à de nouveaux environnements, de s'adapter aux
+                        changements climatiques et de coloniser des habitats propices à leur croissance et à leur
+                        développement.
+                        <br><br>
 
-                    En travaillant pour préserver la flore européenne, <span
-                        class="fst-italic fw-bold">LaManuEcology</span> démontre son engagement en
-                    faveur de la diversité biologique et de la durabilité environnementale. En encourageant la
-                    protection des plantes menacées et la restauration des écosystèmes dégradés, nous contribuons à
-                    créer un avenir plus résilient et équilibré pour les générations futures.
+                        En travaillant pour préserver la flore européenne, <span
+                            class="fst-italic fw-bold">LaManuEcology</span> démontre son engagement en
+                        faveur de la diversité biologique et de la durabilité environnementale. En encourageant la
+                        protection des plantes menacées et la restauration des écosystèmes dégradés, nous contribuons à
+                        créer un avenir plus résilient et équilibré pour les générations futures.
                     </p>
                 </div>
 
@@ -146,35 +150,40 @@
             </div>
         </div>
 
-        
+
 
     </main>
     <!-- FIN CORP DE TEXTE -->
 
     <!-- FOOTER -->
     <footer>
-        <div class="container-fluid footer-bg mt-6 order-1">
-            <div class="row mx-2 justify-content-around">
-                <div class="col-12 col-md-4 text-center text-md-start p-4">
-                    <p>LaManuÉcologie</p>
-                    <p>238 Earls Ct Rd, Londres SW5 9AA</p>
-                    <p>+44 20 7123 4567</p>
-                    <p>contact@lamanuecology.com</p>
+        <div class="container-fluid bg_orange mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <p class="text-light mt-3 mb-0 text-center text-lg-start">LaManuÉcologie</p>
+                        <p class="text-light mb-0 text-center text-lg-start">238 Earls Ct Rd, Londres SW5 9AA</p>
+                        <p class="text-light mb-0 text-center text-lg-start">+44 20 7123 4567</p>
+                        <p class="text-light text-center text-lg-start">contact@lamanuecology.com</p>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <img src="./public/assets/img/icon_ig.png" height="30" class="m-2" alt="Logo Instagram">
+                        <img src="./public/assets/img/icon_twitter.png" height="30" class="m-2" alt="Logo Twitter / X">
+                        <img src="./public/assets/img/icon_fb.png" height="30" class="m-2" alt="Logo Facebook">
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <p class="mt-3 mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">À propos</a></p>
+                        <p class="mb-0 text-center text-lg-end"> <a class="text-decoration-none
+                            text-light" href="">F.A.Q & Contact</a></p>
+                        <p class="mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">Mentions Légales</a></p>
+                        <p class="mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">CGU</a></p>
+                    </div>
                 </div>
-                <div
-                    class="col-12 col-md-4 text-center order-3 order-md-2 d-flex flex-wrap align-content-around justify-content-evenly">
-                    <a href="#"><img src="./public/assets/img/instagram.png" alt="Lien vers Instagram"></a>
-                    <a href="#"><img src="./public/assets/img/twitter.png" alt="Lien vers X"></a>
-                    <a href="#"><img src="./public/assets/img/facebook.png" alt="Lien vers Facebook"></a>
-                </div>
-                <div class="col-12 col-md-4 text-center text-md-end text-end p-4 order-2 order-md-3">
-                    <p>À propos</p>
-                    <p>FAQ & Contact</p>
-                    <p>Mentions Légales</p>
-                    <p>CGU</p>
-                </div>
-                <div class="col-12 text-center p-4 order-4">
-                    <p>Copyright Greeny 2024</p>
+                <div class="row">
+                    <p class="col-12 text-center text-light">Copyright Greeny 2024</p>
                 </div>
             </div>
         </div>
