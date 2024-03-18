@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 body {
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
 }
 
@@ -45,12 +43,16 @@ body {
   font-size: large;
   background-color: #596A40;
   color: white;
-  min-width: 100px;
-  width: 300px;
+  min-width: 50px;
 }
 .btn-third:hover {
-  border: 2px solid #596A40;
-  color: #596A40;
+  color: white;
+  background-color: #596A40;
+}
+
+hr {
+  margin-top: 3em !important;
+  opacity: 0;
 }
 
 .ff-primary {
@@ -65,20 +67,13 @@ h2 {
   border-radius: 50%;
 }
 
-.outer-circle {
-  border-radius: 100%;
-}
-
-.text-around-image {
-  border-radius: 100%;
-}
-
 nav img {
   width: 120px !important;
   height: 120px !important;
 }
 nav ul {
   animation: bubbleEffectOnBurgerClick 2s forwards;
+  z-index: 99;
   border-radius: 50%;
   text-align: center;
   width: 65%;
@@ -119,7 +114,7 @@ nav ul li a {
   to {
     padding: 9em 5em 5em 7em;
     top: -9%;
-    left: -22%;
+    left: -26%;
     width: 130%;
     background-color: #d4863c;
   }
@@ -143,7 +138,7 @@ nav ul li a {
   animation: animeTemoignageTitle linear;
   animation-timeline: view();
   animation-range-start: cover 0%;
-  animation-range-end: cover 60%;
+  animation-range-end: cover 40%;
 }
 
 @keyframes animeEventsTitle {
@@ -151,15 +146,17 @@ nav ul li a {
     transform: translateY(-20em);
     opacity: 0;
   }
-  90% {
+  83% {
     opacity: 0;
   }
-  95% {
+  84% {
+    opacity: 1;
+  }
+  99% {
     opacity: 1;
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
   }
 }
 .container-events h2 {
@@ -167,6 +164,9 @@ nav ul li a {
   animation-timeline: view();
   animation-range-start: cover 0%;
   animation-range-end: cover 50%;
+}
+.container-events img {
+  max-width: 270px;
 }
 
 .temoignage-card {
@@ -177,6 +177,7 @@ nav ul li a {
 }
 .temoignage-card img {
   border-radius: 50%;
+  border: 5px solid #d4863c;
   max-width: 200px;
 }
 
@@ -187,13 +188,15 @@ i {
 }
 
 .img-profil {
-  max-width: 220px;
+  max-width: 150px;
   z-index: -6;
 }
 
 .banner-profil {
   z-index: -6666;
   top: 10%;
+  height: 100px;
+  border: 3px 0px 3px 0px solid #d4863c !important;
 }
 
 @media (width > 768px) {
@@ -227,6 +230,16 @@ i {
     padding-left: 0.5em;
     cursor: pointer;
   }
+  .btn-third {
+    font-size: large;
+    min-width: 100px;
+    width: 300px;
+  }
+  .btn-third:hover {
+    border: 2px solid #596A40;
+    color: #596A40;
+    background-color: white;
+  }
   .hero-container img {
     min-width: 60%;
   }
@@ -237,7 +250,7 @@ i {
     max-width: 400px;
     min-width: 200px;
   }
-  .container-profil .fa-star {
+  .container-profil + .fa-star {
     color: #d4863c;
   }
 }
