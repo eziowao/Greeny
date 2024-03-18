@@ -17,7 +17,7 @@
         <nav class="d-md-none d-flex justify-content-between align-content-center align-items-center w-100 px-3">
             <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
             <i class="fa-solid fa-xmark cross-icon text-light hide fs-2" onclick="navbarEffect.run()"></i>
-            <img src="public/assets/img/brandIcon.png" alt="image de la marque">
+            <img src="public/assets/img/brandIcon.png" class="img_brand" alt="image de la marque">
             <i class="fa-solid fs-2 fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
             <ul class="position-absolute fs-5 my-3 menu hide-menu">
                 <li><a href="">Accueil</a></li>
@@ -50,7 +50,7 @@
             <img src="public/assets/img/brandIcon.png" class="ms-2" alt="icon de la marque">
             <div class="w-100 d-flex flex-wrap justify-content-end align-content-between me-4">
                 <ul class="w-100 text-end p-0">
-                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen active" href="">Accueil</a></li>
+                    <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen active_nav" href="">Accueil</a></li>
                     <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen" href="">Évènements</a></li>
                     <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen" href="">Échanges</a></li>
                     <li class="d-inline ms-lg-5 ms-3"><a class="fw-bold fs-6 text_darkgreen" href="">À propos</a></li>
@@ -69,7 +69,7 @@
     </header>
    
     <section class="hero-container d-flex justify-content-center align-content-center align-items-center my-5">
-        <p class="fs-2 text_darkgreen fw-bold d-md-inline d-none d-xs-none my-md-0 ml-md-4">
+        <p class="fs-3 text_darkgreen fw-bold d-md-inline d-none d-xs-none my-md-0 ml-md-4">
             Semons des liens et cultivons des amitiés dans notre jardin d'échanges. Chaque conseil est une pépite, chaque partage une floraison collective.
         </p>
         <img src="public/assets/img/heroImage1.png" class='d-none d-md-block' alt="image page principale jeune pousses">
@@ -98,10 +98,15 @@
             </div>
         </div>
     </section>
+
+
+    <!-- NOS EVENEMENTS -->
         
     <section class="container-fluid container-events my-5 bg_lightgreen py-5 text-center">
         <h2 class="text-center text-light fw-bold">NOS EVENEMENTS</h2>
-        <div id="carouselExampleInterval" class="carousel w-100 w-sm-75 mx-auto slide d-sm-none" data-bs-ride="carousel">
+        
+        <!-- MOBILE -->
+        <div id="carouselExampleInterval" class="carousel my-5 w-100 w-sm-75 mx-auto slide d-sm-none" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
                     <img src="public/assets/img/calend1.png" class="d-block w-100" alt="...">
@@ -122,6 +127,8 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
+
+        <!-- UP THAN TABLET -->
         <div class="container-fluid my-5 d-none d-md-flex">
             <div class="container">
                 <div class="row">
