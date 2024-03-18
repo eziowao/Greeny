@@ -228,12 +228,18 @@ header nav img {
 
 /*# sourceMappingURL=style.css.map */
 
-
-/* Main & Footer */
+/* Body */
 
 :root {
     font-size: 18px;
 }
+
+body {
+    flex-grow: 1;
+}
+
+
+/* Main */
 
 .carotte {
     margin-left: 5vw;
@@ -255,7 +261,7 @@ header nav img {
     color: #FFFFFF;
 }
 
-main div p {
+main div {
     font-family: "Lato", sans-serif;
     font-weight: bold;
 }
@@ -269,9 +275,17 @@ main div p {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.dropdown-menu {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Footer */
+
 footer {
     font-family: "Lato", sans-serif;
     color: #FFFFFF;
+    bottom: 0;
 }
 
 .p-6 {
