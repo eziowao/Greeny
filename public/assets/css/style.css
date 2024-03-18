@@ -93,7 +93,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-
 }
 
 .groupeImage {
@@ -104,3 +103,39 @@ body {
   .text-justify {
     text-align: justify;
   }
+
+  /* ------------ ProductS page Anthony   ------------ */
+
+  .category-bg {
+    background-color: #93A25A;
+    font-family: "Montserrat";
+}
+
+.hero {
+    color: #596A40;
+}
+
+#category {
+    font-family:"Montserrat";
+    background-color: #484b25;
+    color: #FFFFFF;
+}
+
+main div {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
+.card-body {
+    transition: 0.3s;
+    background-color: rgba(233, 233, 233, 0.685);
+}
+
+.card-body:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu {
+    max-height: 400px;
+    overflow-y: auto;
+}
