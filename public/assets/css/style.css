@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
   overflow-x: hidden;
 }
@@ -45,6 +46,7 @@ body {
   color: white;
   min-width: 50px;
 }
+
 .btn-third:hover {
   color: white;
   background-color: #596A40;
@@ -71,6 +73,7 @@ nav img {
   width: 120px !important;
   height: 120px !important;
 }
+
 nav ul {
   animation: bubbleEffectOnBurgerClick 2s forwards;
   z-index: 99;
@@ -78,10 +81,12 @@ nav ul {
   text-align: center;
   width: 65%;
 }
+
 nav ul li {
   list-style: none;
   margin-top: 1.2em;
 }
+
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -111,6 +116,7 @@ nav ul li a {
     top: -12%;
     left: -40%;
   }
+
   to {
     padding: 9em 5em 5em 7em;
     top: -9%;
@@ -119,6 +125,7 @@ nav ul li a {
     background-color: #d4863c;
   }
 }
+
 .fa-xmark {
   color: white;
   font-size: xx-large;
@@ -130,10 +137,12 @@ nav ul li a {
   0% {
     transform: scale(0) rotate(0deg);
   }
+
   100% {
     transform: scale(1) rotate(360deg);
   }
 }
+
 .container-temoignage h2 {
   animation: animeTemoignageTitle linear;
   animation-timeline: view();
@@ -146,25 +155,31 @@ nav ul li a {
     transform: translateY(-20em);
     opacity: 0;
   }
+
   83% {
     opacity: 0;
   }
+
   84% {
     opacity: 1;
   }
+
   99% {
     opacity: 1;
   }
+
   100% {
     transform: translateY(0);
   }
 }
+
 .container-events h2 {
   animation: animeEventsTitle linear;
   animation-timeline: view();
   animation-range-start: cover 0%;
   animation-range-end: cover 50%;
 }
+
 .container-events img {
   max-width: 270px;
 }
@@ -172,9 +187,11 @@ nav ul li a {
 .temoignage-card {
   min-width: 250px;
 }
+
 .temoignage-card p {
   width: 60%;
 }
+
 .temoignage-card img {
   border-radius: 50%;
   border: 5px solid #d4863c;
@@ -226,25 +243,31 @@ footer p {
   nav ul {
     animation: none;
   }
+
   a {
     text-decoration: none;
   }
+
   header {
     margin: 1em 1em 5em 1em;
   }
+
   header nav img {
     width: 140px;
     height: 140px;
   }
+
   header nav div div {
     position: relative;
     display: flex;
     align-items: center;
     max-width: 600px;
   }
+
   header nav div div input {
     padding-left: 2em;
   }
+
   header nav div div i {
     position: absolute;
     font-size: large;
@@ -253,29 +276,39 @@ footer p {
     padding-left: 0.5em;
     cursor: pointer;
   }
+
   .btn-third {
     font-size: large;
     min-width: 100px;
     width: 300px;
   }
+
   .btn-third:hover {
     border: 2px solid #596A40;
     color: #596A40;
     background-color: white;
   }
+
   .hero-container img {
     min-width: 60%;
   }
+
   .hero-container p {
     margin-left: 1.75em;
   }
+
   .img-profil {
     max-width: 400px;
     min-width: 200px;
   }
-  .container-profil + .fa-star {
+
+  .container-profil+.fa-star {
     color: #d4863c;
   }
+}
+
+.bg_orange {
+  background-color: #D4863C;
 }
 
 /*# sourceMappingURL=style.css.map */
