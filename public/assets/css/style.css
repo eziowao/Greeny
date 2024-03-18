@@ -82,14 +82,14 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  margin-top: 1.2em;
+  margin-top: 0.4em;
 }
 nav ul li a {
   color: white;
   text-decoration: none;
 }
 
-.active {
+.active_nav {
   border-bottom: 3px solid #D4863C;
   padding-bottom: 0.5em;
 }
@@ -180,7 +180,10 @@ nav ul li a {
   animation-range-end: cover 50%;
 }
 .container-events img {
-  max-width: 270px;
+  width: 100% !important;
+}
+.container-events .carousel {
+  width: 85% !important;
 }
 
 .temoignage-card {
@@ -277,6 +280,9 @@ footer p {
   }
   .container-profil .fa-star {
     color: #d4863c;
+  }
+  .container-events img {
+    max-width: 270px;
   }
 }
 
