@@ -252,13 +252,10 @@ main div h2 {
     font-size: 1.8rem;
 }
 
-.text {
-    position: absolute;
-    top: 65%; /* Positionner le texte au centre vertical */
-    left: 79%; /* Positionner le texte au centre horizontal */
-    transform: translate(-50%, -50%); /* Centrer le texte par rapport à son conteneur */
-  }
+.profilWindow {
+    border-radius: 30px;
+}
 
-  .itemPhoto {
-    width: 90%;
-  }
+.profilPicture {
+    width: 75%;
+}
