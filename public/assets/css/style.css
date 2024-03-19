@@ -227,6 +227,11 @@ main div h1 {
     color: #FFFFFF;
 }
 
+.itemPhotoMobile {
+    width: 70%;
+    height: 70%;
+}
+
 .pp {
     border-radius: 100%;
 }
