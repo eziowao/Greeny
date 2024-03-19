@@ -209,7 +209,6 @@ footer p {
     background-image: url(../img/prunier.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 main div h1 {
@@ -258,4 +257,12 @@ main div h2 {
 
 .profilPicture {
     width: 75%;
+}
+
+.itemPhoto {
+    width: 100%;
+}
+
+.profilRate {
+    width: 100%;
 }
