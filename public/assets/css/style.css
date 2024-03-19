@@ -103,7 +103,11 @@ nav ul li a {
 }
 
 .modal-dialog {
-  top: 35%;
+  top: 20%;
+}
+
+.btn:hover {
+  background-color: #93A25A;
 }
 
 .hide-menu {
@@ -112,6 +116,12 @@ nav ul li a {
 
 .show-menu {
   display: block;
+}
+
+.modalEventImg {
+  width: 100%;
+  height: 70%;
+  border-radius: 25px;
 }
 
 @keyframes bubbleEffectOnBurgerClick {
