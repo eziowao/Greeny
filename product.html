@@ -12,53 +12,56 @@
 
 <body>
     <!-- NAVBAR -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="./public/assets/img/personal-profil/Greeny.png" alt="Logo Greeny" height="100">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav text-center ml-auto justify-content-center justify-content-lg-end ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold text_darkgreen" href="#">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold text_darkgreen" href="#">Événements</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold text_darkgreen" href="./products.html">Échanges</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold text_darkgreen" href="./aboutus.html">À propos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold text_darkgreen" href="./questions.html">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold text_darkgreen"
-                                href="./user_personal_profil.html">{user-name}</a>
-                        </li>
-                    </ul>
+    <header class="my-5 container">
+
+        <!-- MOBILE -->
+        <nav
+            class="d-md-none d-flex flex-wrap justify-content-between align-content-center align-items-center w-100 px-3">
+            <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
+            <i class="fa-solid fa-xmark cross-icon text-light hide fs-2" onclick="navbarEffect.run()"></i>
+            <img src="public/assets/img/home-page/brandIcon.png" alt="icon de la marque">
+            <i class="fa-solid fs-2 fa-magnifying-glass" onclick="navbarEffect.runSearch()"></i>
+            <ul class="position-absolute fs-4 menu hide-menu">
+                <li><a href="./home.html">Accueil</a></li>
+                <li><a href="./home.html">Évènements</a></li>
+                <li><a href="./products.html">Échanges</a></li>
+                <li><a href="./aboutus.html">À propos</a></li>
+                <li><a href="./questions.html">FAQ</a></li>
+                <li><a href="./user_personal_profil.html">Profil</a></li>
+
+            </ul>
+            <input type="search" class="w-75 mx-auto search-bar mt-5 hide">
+        </nav>
+
+        <!-- UP TO MOBILE LANDSCAPE -->
+        <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
+            <img src="public/assets/img/home-page/brandIcon.png" class="ms-2" alt="icon de la marque">
+            <div class="w-100 d-flex flex-wrap justify-content-end align-content-between me-4">
+                <ul class="w-100 text-end p-0">
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen active_nav"
+                            href="./home.html">Accueil</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./home.html">Évènements</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./products.html">Échanges</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./aboutus.html">À
+                            propos</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./questions.html">FAQ</a>
+                    </li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./user_personal_profil.html">Profil</a>
+                    </li>
+                </ul>
+                <div class="w-50 mx-auto">
+                    <input class="input-group rounded" type="search">
+                    <i class="fa-solid position-absolute fa-magnifying-glass"></i>
                 </div>
             </div>
         </nav>
-        <div class="container">
 
-            <form class="row gx-3 align-items-center justify-content-center">
-                <div class="col-10 col-lg-5">
-                    <input class="form-control rounded-24" type="search" placeholder="Rechercher"
-                        aria-label="Rechercher">
-                </div>
-            </form>
-        </div>
     </header>
-
     <main>
         <!-- FORMAT MOBILE -->
 
@@ -183,8 +186,10 @@
                                                     alt="Photo de profil de Sophie Jane"
                                                     class="profilPicture d-flex p-2">
                                             </div>
-                                            <div class="col-6">
-                                                <p class="text-start">Sophie Jane</p>
+                                            <div class="col-6 text-light">
+                                                <a href="./profil.html">
+                                                    <p class="text-start">Sophie Jane</p>
+                                                </a>
                                                 <p class="text-start">34 ans</p>
                                                 <p class="text-start">Lyon</p>
                                                 <img src="./public/assets/img/product/Group9.png" alt="Note 4,5 sur 5"
@@ -211,7 +216,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-12">
-                        <p class="text-light mt-3 mb-0 text-center text-lg-start">LaManuÉcologie</p>
+                        <p class="text-light mt-3 mb-0 text-center text-lg-start">LaManuEcology</p>
                         <p class="text-light mb-0 text-center text-lg-start">238 Earls Ct Rd, Londres SW5 9AA</p>
                         <p class="text-light mb-0 text-center text-lg-start">+44 20 7123 4567</p>
                         <p class="text-light text-center text-lg-start">contact@lamanuecology.com</p>

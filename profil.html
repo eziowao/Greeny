@@ -13,42 +13,45 @@
 
 <body class="m-0">
     <header class="my-5 container">
-        <!-- MOBILE -->
 
+        <!-- MOBILE -->
         <nav
             class="d-md-none d-flex flex-wrap justify-content-between align-content-center align-items-center w-100 px-3">
             <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
             <i class="fa-solid fa-xmark cross-icon text-light hide fs-2" onclick="navbarEffect.run()"></i>
-            <img src="public/assets/img/profil/brandIcon.png" alt="icon de la marque">
+            <img src="public/assets/img/home-page/brandIcon.png" alt="icon de la marque">
             <i class="fa-solid fs-2 fa-magnifying-glass" onclick="navbarEffect.runSearch()"></i>
             <ul class="position-absolute fs-4 menu hide-menu">
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Évènements</a></li>
-                <li><a href="">Échanges</a></li>
-                <li><a href="">À propos</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Inscription</a></li>
-                <li><a href="">Connexion</a></li>
+                <li><a href="./home.html">Accueil</a></li>
+                <li><a href="./home.html">Évènements</a></li>
+                <li><a href="./products.html">Échanges</a></li>
+                <li><a href="./aboutus.html">À propos</a></li>
+                <li><a href="./questions.html">FAQ</a></li>
+                <li><a href="./user_personal_profil.html">Profil</a></li>
+
             </ul>
             <input type="search" class="w-75 mx-auto search-bar mt-5 hide">
         </nav>
 
-        <!-- UP THAN MOBILE -->
+        <!-- UP TO MOBILE LANDSCAPE -->
         <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
-            <img src="public/assets/img/profil/brandIcon.png" class="ms-2" alt="icon de la marque">
+            <img src="public/assets/img/home-page/brandIcon.png" class="ms-2" alt="icon de la marque">
             <div class="w-100 d-flex flex-wrap justify-content-end align-content-between me-4">
                 <ul class="w-100 text-end p-0">
-                    <li class="d-inline ms-lg-5 ms-md-1 "><a class="fw-bold fs-6 text_darkgreen active_nav"
-                            href="">Accueil</a></li>
-                    <li class="d-inline ms-lg-5 ms-md-1 "><a class="fw-bold fs-6 text_darkgreen" href="">Évènements</a>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen active_nav"
+                            href="./home.html">Accueil</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./home.html">Évènements</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./products.html">Échanges</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./aboutus.html">À
+                            propos</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./questions.html">FAQ</a>
                     </li>
-                    <li class="d-inline ms-lg-5 ms-md-1 "><a class="fw-bold fs-6 text_darkgreen" href="">Échanges</a>
-                    </li>
-                    <li class="d-inline ms-lg-5 ms-md-1 "><a class="fw-bold fs-6 text_darkgreen" href="">À propos</a>
-                    </li>
-                    <li class="d-inline ms-lg-5 ms-md-1 "><a class="fw-bold fs-6 text_darkgreen" href="">FAQ</a></li>
-                    <li class="d-inline ms-lg-5 ms-md-1 ">
-                        <i class="fa-solid fa-user d-inline text_darkgreen"></i>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./user_personal_profil.html">Profil</a>
                     </li>
                 </ul>
                 <div class="w-50 mx-auto">
@@ -66,7 +69,7 @@
         <div class="row d-none d-md-flex align-items-center mt-3 justify-content-around p-4">
             <div class="col-md-6 d-md-flex flex-wrap align-items-between py-4">
                 <div class="w-100 d-md-flex flex-wrap align-items-center justify-content-between">
-                    <p class="m-0 p-0 text_titlegreen fw-bold col-12 fs-2">Alice - 37 ans - NYC</p>
+                    <p class="m-0 p-0 text_titlegreen fw-bold col-12 fs-2">Sophie Jane - 34 ans - Lyon</p>
                     <div class="d-md-flex col-12 my-4">
                         <i class="fa-solid fa-star p-1"></i>
                         <i class="fa-solid fa-star p-1"></i>
@@ -76,7 +79,7 @@
                     </div>
                 </div>
                 <p class="text-left w-75 text_titlegreen">
-                    “ Passionnée de jardinage depuis toujours, je m'appelle [Votre Nom] et je suis ravie de partager ma
+                    “ Passionnée de jardinage depuis toujours, je m'appelle Sophie et je suis ravie de partager ma
                     passion
                     avec vous. Sur ce site, je propose une sélection soigneusement choisie de graines de fruits et
                     légumes, pour vous aider à créer votre propre petit coin de paradis vert. Faites pousser de
@@ -85,12 +88,12 @@
                 </p>
             </div>
             <div class="col-md-6 text-end border-top-5">
-                <img class="img-profil" src="public/assets/img/profil/profil1.png" alt="image de profil">
+                <img class="img-profil" src="./public/assets/img/product/user-photo.png" alt="image de profil">
             </div>
             <div class="d-flex my-5">
                 <button
                     class="btn text-light bg_lightgreen my-3 col-8 col-lg-5 rounded-24 text_darkgreen mx-auto">Contactez
-                    Alice</button>
+                    Sophie</button>
             </div>
         </div>
 
@@ -190,7 +193,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-12">
-                        <p class="text-light mt-3 mb-0 text-center text-lg-start">LaManuÉcologie</p>
+                        <p class="text-light mt-3 mb-0 text-center text-lg-start">LaManuEcology</p>
                         <p class="text-light mb-0 text-center text-lg-start">238 Earls Ct Rd, Londres SW5 9AA</p>
                         <p class="text-light mb-0 text-center text-lg-start">+44 20 7123 4567</p>
                         <p class="text-light text-center text-lg-start">contact@lamanuecology.com</p>
