@@ -15,36 +15,23 @@
     <header class="my-5 container">
         <!-- MOBILE -->
         
-        <nav class="d-md-none d-flex justify-content-between align-content-center align-items-center w-100 px-3">
+        <nav class="d-md-none d-flex flex-wrap justify-content-between align-content-center align-items-center w-100 px-3">
             <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
             <i class="fa-solid fa-xmark cross-icon text-light hide fs-2" onclick="navbarEffect.run()"></i>
             <img src="public/assets/img/brandIcon.png" alt="icon de la marque">
-            <i class="fa-solid fs-2 fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            <i class="fa-solid fs-2 fa-magnifying-glass"  onclick="navbarEffect.runSearch()"></i>
             <ul class="position-absolute fs-4 menu hide-menu">
                 <li><a href="">Accueil</a></li>
                 <li><a href="">Évènements</a></li>
                 <li><a href="">Échanges</a></li>
                 <li><a href="">À propos</a></li>
                 <li><a href="">FAQ</a></li>
-                <li><a href="">Inscription / Connexion</a></li>
+                <li><a href="">Inscription</a></li>
+                <li><a href="">Connexion</a></li>
             </ul>
+            <input type="search" class="w-75 mx-auto search-bar mt-5 hide">
         </nav>
-
-        <!-- MODAL SEARCH BAR MOBILE ON CLICK -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Vous recherchez ?</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body w-100">
-                  <input type="search">
-                </div>
-              </div>
-            </div>
-        </div>
-
+        
         <!-- UP THAN MOBILE -->
         <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
             <img src="public/assets/img/brandIcon.png" class="ms-2" alt="icon de la marque">
@@ -74,7 +61,7 @@
         <div class="row d-none d-md-flex align-items-center mt-3 justify-content-around p-4">
             <div class="col-md-6 d-md-flex flex-wrap align-items-between py-4">
                 <div class="w-100 d-md-flex flex-wrap align-items-center justify-content-between">
-                    <p class="m-0 p-0 text_titlegreen fw-bold col-12">Alice - 37 ans - NYC</p>
+                    <p class="m-0 p-0 text_titlegreen fw-bold col-12 fs-2">Alice - 37 ans - NYC</p>
                     <div class="d-md-flex col-12 my-4">
                         <i class="fa-solid fa-star p-1"></i>
                         <i class="fa-solid fa-star p-1"></i>
@@ -103,7 +90,7 @@
         <!-- MOBILE -->
         <div class="row d-md-none">
             <div class="d-flex flex-wrap justify-content-center position-relative">
-                <div class="bg-fourth banner-profil w-100 position-absolute ">
+                <div class="bg_lightgreen banner-profil w-100 position-absolute container-fluid ">
 
                 </div>
                 <img class="img-profil" src="public/assets/img/profil1.png" alt="image de profil">
@@ -115,7 +102,7 @@
                     <i class="fa-solid fa-star p-1"></i>
                 </div>
                 <div class="my-3">
-                    <p class="text_titlegreen ">
+                    <p class="text_titlegreen fs-3">
                         Alice - 37 ans - NYC
                     </p>
                 </div>
@@ -131,7 +118,7 @@
             <div>
                 <img src="public/assets/img/image 17.png" alt="image article">
             </div>
-            <div class="m-5 mt-4">
+            <div class="m-5 my-0">
                 <h4 class="text_titlegreen">Prunier Mirabelle de Nancy - Amiens</h4>
                 <p class="text_darkgreen">
                     Je propose à la vente un superbe prunier de la variété Mirabelle
@@ -146,7 +133,7 @@
             <div>
                 <img src="public/assets/img/image 20.png" alt="image article">
             </div>
-            <div class="m-5 mt-4">
+            <div class="m-5 my-0">
                 <h4 class="text_titlegreen">Fraisier - Amiens</h4>
                 <p class="text_darkgreen">
                     Je vous propose un fraisier exceptionnel à adopter pour embellir votre jardin et savourer des
@@ -160,7 +147,7 @@
     <!-- MOBILE -->
     <section class="container-fluid text_titlegreen p-0 d-md-none">
         <div
-            class="d-flex w-100 mx-auto bg_silver text_darkgreen py-5 flex-wrap justify-content-center align-items-center align-content-center">
+            class="d-flex container w-100 mx-auto bg_silver text_darkgreen py-5 flex-wrap justify-content-center align-items-center align-content-center">
             <p class="m-4 fs-1">Ma</p>
             <img src="public/assets/img/bioIcon.png" alt="icon bio">
             <p class="w-100 text-center my-5 p-5">
