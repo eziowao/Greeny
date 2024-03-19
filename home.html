@@ -14,36 +14,22 @@
     <header class="my-5 container">
 
         <!-- MOBILE -->
-        <nav class="d-md-none d-flex justify-content-between align-content-center align-items-center w-100 px-3">
+        <nav class="d-md-none d-flex flex-wrap justify-content-between align-content-center align-items-center w-100 px-3">
             <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
             <i class="fa-solid fa-xmark cross-icon text-light hide fs-2" onclick="navbarEffect.run()"></i>
-            <img src="public/assets/img/brandIcon.png" class="img_brand" alt="image de la marque">
-            <i class="fa-solid fs-2 fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-            <ul class="position-absolute fs-5 my-3 menu hide-menu">
+            <img src="public/assets/img/brandIcon.png" alt="icon de la marque">
+            <i class="fa-solid fs-2 fa-magnifying-glass"  onclick="navbarEffect.runSearch()"></i>
+            <ul class="position-absolute fs-4 menu hide-menu">
                 <li><a href="">Accueil</a></li>
                 <li><a href="">Évènements</a></li>
                 <li><a href="">Échanges</a></li>
                 <li><a href="">À propos</a></li>
                 <li><a href="">FAQ</a></li>
-                <li><a href="">Connexion</a></li>
                 <li><a href="">Inscription</a></li>
+                <li><a href="">Connexion</a></li>
             </ul>
+            <input type="search" class="w-75 mx-auto search-bar mt-5 hide">
         </nav>
-
-        <!-- MODAL SEARCH BAR MOBILE ON CLICK -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Vous recherchez ?</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body w-100">
-                  <input type="search">
-                </div>
-              </div>
-            </div>
-        </div>
 
         <!-- UP TO MOBILE LANDSCAPE -->
         <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
