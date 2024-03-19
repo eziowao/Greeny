@@ -90,23 +90,23 @@ h6 {
 /* ------------ About us Hafida  ------------ */
 
 body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .groupeImage {
     border-radius: 24px;
     width: 100%;
-  }
+}
 
-  .text-justify {
+.text-justify {
     text-align: justify;
-  }
+}
 
-  /* ------------ ProductS page Anthony   ------------ */
+/* ------------ ProductS page Anthony   ------------ */
 
-  .category-bg {
+.category-bg {
     background-color: #93A25A;
     font-family: "Montserrat";
 }
@@ -116,7 +116,7 @@ body {
 }
 
 #category {
-    font-family:"Montserrat";
+    font-family: "Montserrat";
     background-color: #484b25;
     color: #FFFFFF;
 }
@@ -138,4 +138,71 @@ main div {
 .dropdown-menu {
     max-height: 400px;
     overflow-y: auto;
+}
+
+/* ------------ Product page Anthony   ------------ */
+
+
+.bgH1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main div h1 {
+    font-family: "Lato", sans-serif;
+}
+
+.product-bg {
+    background-color: #93A25A;
+
+}
+
+.itemDescription {
+    font-family: "Lato", sans-serif;
+    color: #FFFFFF;
+}
+
+.itemPhotoMobile {
+    width: 70%;
+    height: 70%;
+}
+
+.pp {
+    border-radius: 100%;
+}
+
+.button-contact {
+    background-color: #93A25A;
+    font-family: "Lato", sans-serif;
+    height: 2.5em;
+    width: 12em;
+    border: solid #93A25A;
+}
+
+.button-contact:hover {
+    background-color: #FFFFFF;
+    color: #93A25A;
+    border: solid #93A25A;
+}
+
+main div h2 {
+    color: #596A40;
+    font-family: "Montserrat";
+    font-size: 1.8rem;
+}
+
+.profilWindow {
+    border-radius: 30px;
+}
+
+.profilPicture {
+    width: 75%;
+}
+
+.itemPhoto {
+    width: 100%;
+}
+
+.profilRate {
+    width: 100%;
 }
